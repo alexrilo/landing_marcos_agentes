@@ -195,6 +195,11 @@
         "name": "Y mas casos",
         "icon": "more_horiz",
         "image": ""
+      },
+      {
+        "id": "new_1774878044887",
+        "name": "Nueva patología",
+        "image": ""
       }
     ]
   },

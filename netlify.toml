@@ -1,0 +1,50 @@
+# Netlify Configuration
+# Asegura que los deploys funcionen correctamente en ambas ramas
+
+[build]
+  # No hay build step para la landing (es estática)
+  command = "echo 'Landing is ready'"
+  publish = "."
+  environment = { NODE_VERSION = "16" }
+
+[context.staging]
+  # Pre-producción (rama staging)
+  environment = { CONTEXT = "staging" }
+
+[context.production]
+  # Producción (rama main)
+  environment = { CONTEXT = "production" }
+
+# Redirects
+[[redirects]]
+  from = "/admin"
+  to = "https://admin-marcos.vercel.app"
+  status = 302
+  force = false
+
+[[redirects]]
+  from = "api/*"
+  to = "https://admin-api.vercel.app/api/:splat"
+  status = 200
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Cache-Control = "public, max-age=3600"
+
+# Cache busting para cambios en contenido
+[[headers]]
+  for = "/content.json"
+  [headers.values]
+    Cache-Control = "no-cache, must-revalidate"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+

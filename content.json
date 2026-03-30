@@ -1,0 +1,336 @@
+{
+  "site": {
+    "title": "Marcos Blazquez Fisioterapia a domicilio",
+    "description": "Fisioterapia profesional, elegante y adaptada a tu bienestar"
+  },
+  "hero": {
+    "badge": "Premium Physiotherapy",
+    "title": "Recupera tu bienestar con <i>fisioterapia</i> a domicilio.",
+    "subtitle": "Te ofrezco un enfoque clinico de alta gama, trasladando la precision de la fisioterapia manual, deportiva y terapeutica a la comodidad de tu hogar.",
+    "image": "assets/images/marcos.webp",
+    "quote": "La salud no es la ausencia de dolor, sino la capacidad de sentirte bien en tu propio cuerpo.",
+    "cta_primary": {
+      "text": "Reservar cita",
+      "url": "https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+    },
+    "cta_secondary": {
+      "text": "Ver servicios",
+      "anchor": "#services"
+    }
+  },
+  "philosophy": {
+    "title": "Fisioterapia serena, elegante y adaptada a ti.",
+    "pillars": [
+      {
+        "id": "personalized",
+        "icon": "auto_awesome",
+        "title": "Atención Personalizada",
+        "description": "Cada sesion se diseña segun tu caso, tu dolor y tus objetivos, sin protocolos genericos."
+      },
+      {
+        "id": "home_based",
+        "icon": "home_health",
+        "title": "Entorno Propio",
+        "description": "El tratamiento sucede en casa o en tu contexto real, donde el cambio tiene mas sentido y continuidad."
+      },
+      {
+        "id": "clinical",
+        "icon": "clinical_notes",
+        "title": "Rigurosidad Clínica",
+        "description": "Tecnicas basadas en evidencia, experiencia clinica y criterio honesto para cada sesion."
+      }
+    ]
+  },
+  "services": {
+    "label": "Especialidades",
+    "title": "Tratamientos",
+    "subtitle": "Tecnicas utiles de verdad para recuperar funcion, reducir dolor y volver a moverte con confianza.",
+    "items": [
+      {
+        "id": "terapia-manual",
+        "title": "Terapia Manual Avanzada",
+        "description": "Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidad.",
+        "image": "assets/images/terapiamanual.webp",
+        "modal_id": "modal-terapia-manual",
+        "modal_title": "Terapia Manual",
+        "modal_subtitle": "Tratamiento",
+        "modal_description": "Es una tecnica de la fisioterapia en la que el profesional utiliza las manos para tratar distintas alteraciones del sistema musculoesqueletico.",
+        "modal_content": "Entre ellas destacan los masajes terapeuticos, las movilizaciones articulares y las manipulaciones articulares para reducir dolor y recuperar movilidad.",
+        "layout": "large"
+      },
+      {
+        "id": "fisioterapia-deportiva",
+        "title": "Fisioterapia Deportiva",
+        "description": "Prevencion de recaidas, readaptacion al esfuerzo y mejora del rendimiento deportivo.",
+        "image": "assets/images/vendajefuncional.webp",
+        "modal_id": "modal-fisioterapia-deportiva",
+        "modal_title": "Fisioterapia Deportiva",
+        "modal_subtitle": "Tratamiento",
+        "modal_description": "Especialidad orientada a recuperar lesiones derivadas del deporte y a prevenir recaidas cuando vuelves a entrenar.",
+        "modal_content": "Incluye trabajo especifico de readaptacion, control de cargas y herramientas como vendaje funcional o kinesiotape segun el caso.",
+        "features": [
+          "Prevención de lesiones",
+          "Readaptación al esfuerzo"
+        ],
+        "layout": "highlight",
+        "style": "primary"
+      },
+      {
+        "id": "puncion-seca",
+        "title": "Punción Seca",
+        "description": "Tecnica dirigida a disminuir tension muscular, aliviar dolor y acelerar la recuperacion del tejido.",
+        "image": "assets/images/puncionseca.webp",
+        "modal_id": "modal-puncion-seca",
+        "modal_title": "Puncion Seca",
+        "modal_subtitle": "Tratamiento",
+        "modal_description": "Tecnica que consiste en introducir agujas muy finas en puntos de tension o contractura para modular el dolor y mejorar la respuesta del tejido.",
+        "modal_content": "Se utiliza para disminuir tension muscular, aliviar dolor y acelerar la recuperacion cuando el cuadro lo requiere.",
+        "layout": "small"
+      },
+      {
+        "id": "electropuncion",
+        "title": "Electropunción y Neuromodulación",
+        "description": "Impulsos electricos aplicados con precision para modular dolor y mejorar funcion neuromuscular.",
+        "image": "assets/images/electropuncion.webp",
+        "modal_id": "modal-electropuncion",
+        "modal_title": "Electropuncion y Neuromodulacion",
+        "modal_subtitle": "Tratamiento",
+        "modal_description": "La electropuncion combina agujas de acupuntura con impulsos electricos para mejorar la respuesta del tejido y del sistema neuromuscular.",
+        "modal_content": "La neuromodulacion busca modificar la manera en que los nervios transmiten la informacion para reducir dolor cronico y mejorar funcion.",
+        "layout": "small"
+      },
+      {
+        "id": "ejercicio-terapeutico",
+        "title": "Ejercicio Terapéutico",
+        "description": "Trabajo progresivo y adaptado para recuperar capacidad funcional, regular el dolor y consolidar cambios entre sesiones.",
+        "image": "assets/images/ejercicio_terapeutico.webp",
+        "modal_id": "modal-ejercicio-terapeutico",
+        "modal_title": "Ejercicio Terapeutico",
+        "modal_subtitle": "Tratamiento",
+        "modal_description": "Parte esencial del tratamiento cuando buscamos una recuperacion mas estable y funcional tras una lesion o en casos de dolor persistente.",
+        "modal_content": "Consiste en ejercicios planificados y adaptados para reducir dolor, mejorar capacidad funcional y devolver seguridad al movimiento.",
+        "layout": "large"
+      }
+    ]
+  },
+  "experience": {
+    "label": "Experiencia",
+    "title": "Sobre Marcos Blázquez",
+    "image": "assets/images/hospital.webp",
+    "bio": "He desarrollado mi carrera entre consulta, domicilio y deporte, colaborando con clubes y entornos reales de rendimiento como <strong>Triana Club de Futbol</strong> y <strong>A.D. Naya</strong>.",
+    "philosophy": "Mi filosofia une terapia manual precisa, ejercicio terapeutico y educacion del paciente, entendiendo que el exito del tratamiento depende de comprender cada caso de forma global.",
+    "organizations": [
+      {
+        "id": "triana",
+        "logo": "assets/images/triana.webp",
+        "name": "Triana C.F.",
+        "year": "2021-2022"
+      },
+      {
+        "id": "naya",
+        "logo": "assets/images/naya.webp",
+        "name": "A.D. Naya",
+        "year": "2023+"
+      },
+      {
+        "id": "encadenate",
+        "logo": "assets/images/encadenate.webp",
+        "name": "Encadenate",
+        "year": "Torrejon"
+      },
+      {
+        "id": "own",
+        "logo": "assets/images/logo.webp",
+        "name": "Servicio propio",
+        "year": "+3 anos"
+      }
+    ]
+  },
+  "pathologies": {
+    "label": "Patologias",
+    "title": "¿Qué podemos tratar?",
+    "subtitle": "Trabajo patologias frecuentes para ayudarte a recuperar movilidad, autonomia y confianza en tu dia a dia.",
+    "items": [
+      {
+        "id": "back_pain",
+        "name": "Dolor de espalda",
+        "image": "assets/images/dolor_de_espalda.webp"
+      },
+      {
+        "id": "atm",
+        "name": "ATM",
+        "image": "assets/images/patologia_atm.webp"
+      },
+      {
+        "id": "shoulder_pain",
+        "name": "Dolor de hombro",
+        "image": "assets/images/dolordehombro.webp"
+      },
+      {
+        "id": "sports_injury",
+        "name": "Lesiones deportivas",
+        "image": "assets/images/lesiondeportiva.webp"
+      },
+      {
+        "id": "geriatrics",
+        "name": "Geriatria",
+        "image": "assets/images/pacientegeriatrico.webp"
+      },
+      {
+        "id": "overload",
+        "name": "Sobrecargas",
+        "image": "assets/images/puncionseca.webp"
+      },
+      {
+        "id": "readaptation",
+        "name": "Readaptacion",
+        "image": "assets/images/ejercicio_terapeutico.webp"
+      },
+      {
+        "id": "more",
+        "name": "Y mas casos",
+        "icon": "more_horiz"
+      }
+    ]
+  },
+  "pricing": {
+    "label": "Tarifas",
+    "title": "Inversión en tu salud",
+    "subtitle": "Transparencia absoluta. Sesiones de aproximadamente una hora y opciones de bono segun zona y seguimiento.",
+    "note": "Todos los materiales incluidos en el precio.",
+    "items": [
+      {
+        "id": "torr_location",
+        "title": "Torrejon de Ardoz",
+        "description": "Sesion a domicilio de 1 hora aprox.",
+        "price": "45€",
+        "details": [
+          "Individual: 45€",
+          "Bono 5 sesiones: 210€",
+          "Bono 10 sesiones: 400€"
+        ],
+        "cta": "Reservar ahora",
+        "url": "https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez",
+        "style": "default"
+      },
+      {
+        "id": "corredor_location",
+        "title": "Corredor del Henares",
+        "description": "Sesion a domicilio de 1 hora aprox.",
+        "price": "50€",
+        "details": [
+          "Individual: 50€",
+          "Bono 5 sesiones: 235€",
+          "Bono 10 sesiones: 450€"
+        ],
+        "cta": "Reservar ahora",
+        "url": "https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez",
+        "style": "highlight"
+      },
+      {
+        "id": "naya_location",
+        "title": "A.D. Naya y Club Sinabro",
+        "description": "Colaboraciones y precio especial para miembros.",
+        "price": "35€",
+        "details": [
+          "Individual: 35€",
+          "Precio especial para miembros."
+        ],
+        "cta": "Reservar ahora",
+        "url": "https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez",
+        "style": "default"
+      },
+      {
+        "id": "kairos_location",
+        "title": "Kairos EMCE",
+        "description": "Centro sanitario en Alcala de Henares.",
+        "price": "45€",
+        "details": [
+          "Individual: 45€",
+          "Bono 5 sesiones: 210€",
+          "Bono 10 sesiones: 400€",
+          "Escritorios 3 · Esc. Izqda 1 Izqda"
+        ],
+        "cta": "Reservar ahora",
+        "url": "https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez",
+        "style": "default"
+      }
+    ],
+    "terms": [
+      "El bono se abona en su totalidad.",
+      "Validez de 1 año desde la compra.",
+      "Sesion aproximada de 1 hora."
+    ]
+  },
+  "testimonials": [
+    {
+      "id": "review1",
+      "rating": 5,
+      "text": "Marcos es un profesional de 10, me ayudo a superar una lesion deportiva que me limitaba muchisimo y ahora me trata la sobrecarga muscular de forma periodica.",
+      "author": "Chris",
+      "badge": "Resena verificada",
+      "initials": "JR"
+    },
+    {
+      "id": "review2",
+      "rating": 5,
+      "text": "Fenomenal, me trato durante varias sesiones y genial desde la primera. Recomendable 100%.",
+      "author": "Juani Donoso Cubillo",
+      "badge": "Resena verificada",
+      "initials": "MG"
+    }
+  ],
+  "contact": {
+    "label": "¿Hablamos?",
+    "title": "¿Hablamos?",
+    "description": "Cuentame tu caso en este formulario y me pondre en contacto contigo para orientarte personalmente.",
+    "email": "formulario de contacto",
+    "phone": "+34 681 85 20 33",
+    "whatsapp": "https://wa.me/34681852033",
+    "instagram": "https://www.instagram.com/blazquezm_fisio",
+    "social_handle": "@blazquezm_fisio",
+    "location": "Torrejon y Corredor del Henares",
+    "form_fields": [
+      {
+        "name": "nombre",
+        "label": "Nombre",
+        "type": "text",
+        "placeholder": "Tu nombre completo"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "placeholder": "hola@ejemplo.com"
+      },
+      {
+        "name": "mensaje",
+        "label": "Mensaje",
+        "type": "textarea",
+        "placeholder": "Cuentame brevemente que necesitas...",
+        "rows": 4
+      }
+    ]
+  },
+  "footer": {
+    "brand": "Marcos Blazquez Fisioterapia",
+    "copyright": "© 2026 Marcos Blazquez Fisioterapia.",
+    "links": [
+      {"text": "Filosofia", "anchor": "#philosophy"},
+      {"text": "Servicios", "anchor": "#services"},
+      {"text": "Contacto", "anchor": "#contacto"}
+    ]
+  },
+  "config": {
+    "emailjs": {
+      "service_id": "service_st2be2e",
+      "template_id": "template_zsfjio9",
+      "user_id": "YOUR_EMAILJS_USER_ID"
+    },
+    "colors": {
+      "primary": "#3c6932",
+      "primary_container": "#83b474",
+      "primary_fixed": "#bcf1ab"
+    }
+  }
+}

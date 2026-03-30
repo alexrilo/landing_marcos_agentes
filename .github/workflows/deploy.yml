@@ -1,0 +1,39 @@
+name: Deploy Landing
+
+on:
+  push:
+    branches:
+      - main
+      - staging
+
+jobs:
+  notify:
+    name: Notify Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Notify Netlify Staging
+        if: github.ref == 'refs/heads/staging'
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.NETLIFY_AUTH_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            -d '{"clear_cache":true}' \
+            "https://api.netlify.com/build_hooks/${{ secrets.NETLIFY_STAGING_BUILD_HOOK }}"
+        continue-on-error: true
+
+      - name: Notify Netlify Production
+        if: github.ref == 'refs/heads/main'
+        run: |
+          curl -X POST \
+            -d '{}' \
+            "${{ secrets.NETLIFY_PROD_BUILD_HOOK }}"
+        continue-on-error: true
+
+      - name: Log Deploy Info
+        run: |
+          echo "📦 Deployed from: ${{ github.ref }}"
+          echo "🔄 Commit: ${{ github.sha }}"
+          echo "👤 Author: ${{ github.actor }}"

@@ -316,9 +316,18 @@
     "brand": "Marcos Blazquez Fisioterapia",
     "copyright": "© 2026 Marcos Blazquez Fisioterapia.",
     "links": [
-      {"text": "Filosofia", "anchor": "#philosophy"},
-      {"text": "Servicios", "anchor": "#services"},
-      {"text": "Contacto", "anchor": "#contacto"}
+      {
+        "text": "Filosofia",
+        "anchor": "#philosophy"
+      },
+      {
+        "text": "Servicios",
+        "anchor": "#services"
+      },
+      {
+        "text": "Contacto",
+        "anchor": "#contacto"
+      }
     ]
   },
   "config": {

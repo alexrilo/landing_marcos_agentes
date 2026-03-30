@@ -3,7 +3,6 @@
 .gitignore
 node_modules
 admin-backend
-admin-frontend
 .agents
 *.md
 .env

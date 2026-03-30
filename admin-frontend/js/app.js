@@ -11,10 +11,27 @@ class AdminApp {
   }
 
   async init() {
-    if (this.isLoggedIn) {
-      await this.goToDashboard();
-    } else {
-      this.initLoginPage();
+    console.log('🚀 Iniciando Admin Panel');
+    const path = window.location.pathname;
+    const isLoginPage = path.endsWith('/index.html') || path === '/' || path.endsWith('/');
+    const isDashboardPage = path.endsWith('/dashboard.html');
+
+    if (isLoginPage) {
+      if (this.isLoggedIn) {
+        // Ya tiene token → ir directo al dashboard
+        this.goToDashboard();
+      } else {
+        // Sin token → mostrar login
+        this.initLoginPage();
+      }
+    } else if (isDashboardPage) {
+      if (this.isLoggedIn) {
+        // Cargar contenido E inicializar el dashboard
+        await this.loadDashboard();
+      } else {
+        // Sin token → redirigir al login
+        window.location.href = 'index.html';
+      }
     }
   }
 
@@ -35,8 +52,9 @@ class AdminApp {
 
       try {
         await api.login(password);
+        console.log('✅ Login exitoso');
         this.isLoggedIn = true;
-        window.location.href = 'dashboard.html';
+        this.goToDashboard();
       } catch (error) {
         loginError.style.display = 'block';
         loginError.textContent = `❌ ${error.message}`;
@@ -48,21 +66,25 @@ class AdminApp {
 
   // ========== DASHBOARD ==========
 
-  async goToDashboard() {
+  goToDashboard() {
     if (!this.isLoggedIn) {
       window.location.href = 'index.html';
       return;
     }
+    // Solo navegar — el init() de dashboard.html se encarga del resto
+    window.location.href = 'dashboard.html';
+  }
 
+  async loadDashboard() {
     try {
-      // Cargar contenido
+      // Cargar contenido desde el backend
       this.content = await api.getContent();
       console.log('✅ Contenido cargado:', this.content);
 
-      // Inicializar dashboard
+      // Inicializar dashboard (listeners, sección por defecto)
       this.initDashboard();
     } catch (error) {
-      console.error('Error inicializando dashboard:', error);
+      console.error('Error cargando contenido:', error);
       this.showError('No se pudo cargar el contenido: ' + error.message);
     }
   }
@@ -104,6 +126,7 @@ class AdminApp {
     if (publishBtn) {
       publishBtn.addEventListener('click', () => this.publish());
     }
+    
   }
 
   // ========== SECCIONES ==========

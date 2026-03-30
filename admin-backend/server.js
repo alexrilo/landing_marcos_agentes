@@ -27,10 +27,25 @@ dotenv.config({ path: join(__dirname, '.env') });
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(',').map(origin => origin.trim())
+  : [
+    'http://localhost:3000',
+    'https://landing-marcos-agentes-ceiq.vercel.app'
+  ];
 // Middleware
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:3000', 'https://landing-marcos-agentes-ceiq.vercel.app'],
-  credentials: true
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
+app.options('*', cors({
+  origin: allowedOrigins,
+  credentials: true,
+  methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json({ limit: '50mb' }));
@@ -64,6 +79,13 @@ app.use((err, req, res, next) => {
 // 404
 app.use((req, res) => {
   res.status(404).json({ error: { message: 'Ruta no encontrada' } });
+});
+
+app.get('/api/debug-cors', (req, res) => {
+  res.json({
+    allowedOrigins,
+    envValue: process.env.ALLOWED_ORIGINS || null
+  });
 });
 
 app.listen(PORT, () => {

@@ -6,7 +6,7 @@
  * - GITHUB_TOKEN: Personal access token con permisos en el repo
  * - GITHUB_OWNER: Usuario/org dueño del repo (ej: "usuario")
  * - GITHUB_REPO: Nombre del repo (ej: "landing-marcos")
- * - GITHUB_BRANCH: Rama donde guardar (ej: "staging", "main")
+ * - GITHUB_BRANCH: Rama donde guardar (ej: "main", "main")
  */
 
 import dotenv from 'dotenv';
@@ -27,7 +27,7 @@ const octokit = new Octokit({
 
 const OWNER = process.env.GITHUB_OWNER;
 const REPO = process.env.GITHUB_REPO;
-const BRANCH = process.env.GITHUB_BRANCH || 'staging';
+const BRANCH = process.env.GITHUB_BRANCH || 'main';
 const CONTENT_FILE = 'content.json';
 
 if (!OWNER || !REPO || !process.env.GITHUB_TOKEN) {
@@ -277,7 +277,7 @@ export async function getHistory(limit = 10) {
 }
 
 /**
- * Crea un pull request de staging -> main
+ * Crea un pull request de main -> main
  * Útil para workflow pre -> prod
  */
 export async function createPublishPR(title = 'Publicar cambios a producción') {
@@ -288,7 +288,7 @@ export async function createPublishPR(title = 'Publicar cambios a producción') 
       title,
       head: BRANCH,
       base: 'main',
-      body: '🚀 Cambios listos para producción.\nRevisar staging y mergear cuando esté listo.'
+      body: '🚀 Cambios listos para producción.\nRevisar main y mergear cuando esté listo.'
     });
 
     console.log(`✅ PR creado: ${response.data.html_url}`);

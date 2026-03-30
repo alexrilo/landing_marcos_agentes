@@ -48,7 +48,7 @@
     "items": [
       {
         "id": "terapia-manual",
-        "title": "Terapia Manual Avanzada",
+        "title": "Terapia Manual Avanzadad",
         "description": "Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidad.",
         "image": "assets/images/terapiamanual.webp",
         "modal_id": "modal-terapia-manual",
@@ -56,7 +56,8 @@
         "modal_subtitle": "Tratamiento",
         "modal_description": "Es una tecnica de la fisioterapia en la que el profesional utiliza las manos para tratar distintas alteraciones del sistema musculoesqueletico.",
         "modal_content": "Entre ellas destacan los masajes terapeuticos, las movilizaciones articulares y las manipulaciones articulares para reducir dolor y recuperar movilidad.",
-        "layout": "large"
+        "layout": "large",
+        "features": []
       },
       {
         "id": "fisioterapia-deportiva",
@@ -85,7 +86,8 @@
         "modal_subtitle": "Tratamiento",
         "modal_description": "Tecnica que consiste en introducir agujas muy finas en puntos de tension o contractura para modular el dolor y mejorar la respuesta del tejido.",
         "modal_content": "Se utiliza para disminuir tension muscular, aliviar dolor y acelerar la recuperacion cuando el cuadro lo requiere.",
-        "layout": "small"
+        "layout": "small",
+        "features": []
       },
       {
         "id": "electropuncion",
@@ -97,7 +99,8 @@
         "modal_subtitle": "Tratamiento",
         "modal_description": "La electropuncion combina agujas de acupuntura con impulsos electricos para mejorar la respuesta del tejido y del sistema neuromuscular.",
         "modal_content": "La neuromodulacion busca modificar la manera en que los nervios transmiten la informacion para reducir dolor cronico y mejorar funcion.",
-        "layout": "small"
+        "layout": "small",
+        "features": []
       },
       {
         "id": "ejercicio-terapeutico",
@@ -109,7 +112,8 @@
         "modal_subtitle": "Tratamiento",
         "modal_description": "Parte esencial del tratamiento cuando buscamos una recuperacion mas estable y funcional tras una lesion o en casos de dolor persistente.",
         "modal_content": "Consiste en ejercicios planificados y adaptados para reducir dolor, mejorar capacidad funcional y devolver seguridad al movimiento.",
-        "layout": "large"
+        "layout": "large",
+        "features": []
       }
     ]
   },

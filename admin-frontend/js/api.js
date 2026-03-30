@@ -7,7 +7,7 @@ class AdminAPI {
   constructor() {
     // En desarrollo, usa localhost; en producción, usa dominio
     const isDev = window.location.hostname === 'localhost';
-    this.baseURL = isDev ? 'http://localhost:3001' : 'https://admin-api.vercel.app';
+    this.baseURL = isDev ? 'http://localhost:3001' : 'https://landing-marcos-agentes.vercel.app';
     this.token = localStorage.getItem('admin_token');
   }
 

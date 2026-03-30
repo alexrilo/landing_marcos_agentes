@@ -2,7 +2,6 @@
 .github
 .gitignore
 node_modules
-admin-backend
 .agents
 *.md
 .env

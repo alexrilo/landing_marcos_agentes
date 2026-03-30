@@ -186,13 +186,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     if (accordionButton && accordionContent) {
-        accordionContent.innerHTML = `<div>${accordionContent.innerHTML}</div>`;
+        const accordionArrow = accordionButton.querySelector(".accordion-arrow");
 
         accordionButton.addEventListener("click", () => {
             const willOpen = accordionButton.getAttribute("aria-expanded") !== "true";
             accordionButton.setAttribute("aria-expanded", String(willOpen));
             accordionContent.hidden = !willOpen;
             accordionContent.classList.toggle("open", willOpen);
+
+            if (accordionArrow) {
+                accordionArrow.textContent = willOpen ? "−" : "+";
+            }
         });
     }
 
@@ -293,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
             try {
                 await emailjs.send("service_st2be2e", "template_zsfjio9", formData);
                 contactForm.reset();
-                formFeedback.textContent = "Mensaje enviado correctamente. Marcos te responderÃ¡ lo antes posible.";
+                formFeedback.textContent = "Mensaje enviado correctamente. Marcos te respondera lo antes posible.";
                 formFeedback.classList.add("is-success");
             } catch (error) {
                 formFeedback.textContent = "No se pudo enviar el mensaje. Prueba de nuevo o contacta por WhatsApp.";

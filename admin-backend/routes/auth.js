@@ -49,7 +49,6 @@ router.post('/login', async (req, res) => {
       { expiresIn: '24h' }
     );
 
-    console.log('✅ Login exitoso');
     res.json({
       token,
       expiresIn: '24h',

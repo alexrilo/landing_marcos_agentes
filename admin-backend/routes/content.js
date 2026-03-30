@@ -82,7 +82,6 @@ router.post('/', verifyToken, async (req, res) => {
       });
     }
 
-    console.log(`✅ Contenido actualizado: ${result.commit}`);
     res.json({
       success: true,
       commit: result.commit,

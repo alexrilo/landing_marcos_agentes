@@ -60,7 +60,6 @@ router.post('/', verifyToken, upload.single('file'), async (req, res) => {
 
       const result = await uploadImage(compressedBuffer, filepath);
 
-      console.log(`✅ Imagen subida: ${result.url}`);
       res.json({
         success: true,
         url: result.url,
@@ -102,7 +101,6 @@ router.delete('/', verifyToken, async (req, res) => {
 
     const result = await deleteImage(filepath);
 
-    console.log(`✅ Imagen eliminada: ${filepath}`);
     res.json({
       success: true,
       message: 'Imagen eliminada'

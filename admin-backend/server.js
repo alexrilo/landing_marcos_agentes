@@ -89,11 +89,5 @@ app.get('/api/debug-cors', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`✅ Admin API escuchando en puerto ${PORT}`);
-  console.log(`📊 Endpoints disponibles:`);
-  console.log(`   POST /api/auth/login`);
-  console.log(`   GET  /api/content`);
-  console.log(`   POST /api/content`);
-  console.log(`   POST /api/images`);
-  console.log(`   GET  /api/history`);
+  
 });

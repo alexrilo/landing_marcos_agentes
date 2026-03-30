@@ -30,29 +30,12 @@ const REPO = process.env.GITHUB_REPO;
 const BRANCH = process.env.GITHUB_BRANCH || 'main';
 const CONTENT_FILE = 'content.json';
 
-if (!OWNER || !REPO || !process.env.GITHUB_TOKEN) {
-  console.error('⚠️  Faltan variables de entorno GitHub:', {
-    OWNER: !!OWNER,
-    REPO: !!REPO,
-    GITHUB_TOKEN: !!process.env.GITHUB_TOKEN,
-    BRANCH
-  });
-} else {
-  console.log('✅ GitHub configurado:', {
-    OWNER,
-    REPO,
-    BRANCH,
-    TOKEN: process.env.GITHUB_TOKEN.slice(0, 10) + '...'
-  });
-}
-
 /**
  * Obtiene el contenido actual de content.json desde GitHub
  * En desarrollo, usa fallback a archivo local si GitHub falla
  */
 export async function getContent() {
   try {
-    console.log(`📡 Intentando obtener content.json de GitHub...`);
     const response = await octokit.rest.repos.getContent({
       owner: OWNER,
       repo: REPO,
@@ -61,17 +44,14 @@ export async function getContent() {
     });
 
     const content = Buffer.from(response.data.content, 'base64').toString();
-    console.log('✅ Content.json obtenido de GitHub exitosamente');
     return JSON.parse(content);
   } catch (error) {
-    console.warn(`⚠️  Error conectando a GitHub (${error.status}):`, error.message);
-    
+
     // Fallback: leer archivo local en desarrollo
     if (process.env.NODE_ENV === 'development') {
       try {
         const localPath = join(__dirname, '..', '..', 'content.json');
         const localContent = readFileSync(localPath, 'utf-8');
-        console.log('📁 Usando content.json local como fallback');
         return JSON.parse(localContent);
       } catch (localError) {
         console.error('❌ Error leyendo content.json local:', localError.message);
@@ -125,15 +105,12 @@ export async function updateContent(contentObject, commitMessage) {
 
     const response = await octokit.rest.repos.createOrUpdateFileContents(updatePayload);
 
-    console.log(`✅ Contenido actualizado en GitHub: ${response.data.commit.sha.slice(0, 7)}`);
-
     return {
       commit: response.data.commit.sha,
       html_url: response.data.commit.html_url,
       timestamp: new Date().toISOString()
     };
   } catch (error) {
-    console.error('⚠️  Error actualizando en GitHub:', error.message);
     
     // Fallback: guardar localmente en desarrollo
     if (process.env.NODE_ENV === 'development') {
@@ -203,8 +180,6 @@ export async function uploadImage(buffer, filepath) {
     // Construir URL pública
     const rawUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${fullPath}`;
 
-    console.log(`✅ Imagen subida: ${fullPath}`);
-
     return {
       url: rawUrl,
       commit: response.data.commit.sha,
@@ -243,7 +218,6 @@ export async function deleteImage(filepath) {
       }
     });
 
-    console.log(`✅ Imagen eliminada: ${filepath}`);
     return { success: true };
   } catch (error) {
     console.error('Error eliminando imagen:', error.message);
@@ -291,7 +265,6 @@ export async function createPublishPR(title = 'Publicar cambios a producción') 
       body: '🚀 Cambios listos para producción.\nRevisar main y mergear cuando esté listo.'
     });
 
-    console.log(`✅ PR creado: ${response.data.html_url}`);
     return {
       pr_number: response.data.number,
       url: response.data.html_url

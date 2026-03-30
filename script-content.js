@@ -400,7 +400,6 @@ function injectAllContent() {
   // 4. Testimonialesdinámicos
   injectTestimonials();
 
-  console.log('✅ todo el contenido inyectado desde content.json');
 }
 
 // Cargar JSON con cache-busting
@@ -416,7 +415,6 @@ async function loadContent() {
     document.title = contentData.site.title;
     document.querySelector('meta[name="description"]')?.setAttribute('content', contentData.site.description);
     
-    console.log('✅ Contenido cargadoo:', contentData);
     return contentData;
   } catch (error) {
     console.error('❌ Error cargando content.json:', error);
@@ -554,5 +552,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
-  console.log('✅ Landing inicializada correctamente con contenido dinámico');
 });

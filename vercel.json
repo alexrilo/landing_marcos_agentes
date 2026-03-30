@@ -1,0 +1,34 @@
+{
+  "projects": {
+    "admin-backend": {
+      "root": "admin-backend/",
+      "builds": [
+        {
+          "src": "server.js",
+          "use": "@vercel/node"
+        }
+      ],
+      "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "server.js"
+        }
+      ]
+    },
+    "admin-frontend": {
+      "root": "admin-frontend/",
+      "builds": [
+        {
+          "src": "**/*.html",
+          "use": "@vercel/static"
+        }
+      ],
+      "rewrites": [
+        {
+          "source": "/(.*)",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  }
+}

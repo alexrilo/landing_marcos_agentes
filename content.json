@@ -163,7 +163,7 @@
       },
       {
         "id": "shoulder_pain",
-        "name": "Dolor de hombro",
+        "name": "Dolor de hombroo",
         "image": "assets/images/dolordehombro.webp"
       },
       {
@@ -189,7 +189,8 @@
       {
         "id": "more",
         "name": "Y mas casos",
-        "icon": "more_horiz"
+        "icon": "more_horiz",
+        "image": ""
       }
     ]
   },

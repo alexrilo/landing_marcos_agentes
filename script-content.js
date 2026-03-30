@@ -161,23 +161,123 @@ function injectPhilosophyPillars() {
   });
 }
 
-/**
- * Genera el contenido HTML de servicios para inyectar dinámicamente
- */
+function renderLargeCard(item, index) {
+  const isReversed = index % 2 !== 0; // odd index = image on right
+  const orderClass = isReversed ? 'md:order-2' : '';
+  const textOrderClass = isReversed ? 'md:order-1' : '';
+
+  return `
+    <div class="md:col-span-8 bg-surface-container-low rounded-[2rem] editorial-shadow overflow-hidden">
+      <div class="grid grid-cols-1 md:grid-cols-2 h-full">
+        <div class="relative overflow-hidden ${orderClass} min-h-[260px] md:min-h-0">
+          <img data-content-src="services.items[${index}].image" src="${item.image}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-10 md:p-12 flex flex-col justify-center ${textOrderClass}">
+          <h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4" data-content="services.items[${index}].title">${item.title}</h3>
+          <p class="text-on-surface-variant leading-relaxed mb-8" data-content="services.items[${index}].description">${item.description}</p>
+          <button class="open-modal self-start inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline" data-modal="${item.modal_id}">
+            Descubrir
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderHighlightCard(item, index) {
+  const featuresHtml = item.features && item.features.length > 0
+    ? `<ul class="space-y-3 mt-auto">${item.features.map(f => `<li class="flex items-center gap-3"><span class="material-symbols-outlined text-sm">check_circle</span>${f}</li>`).join('')}</ul>`
+    : '';
+
+  return `
+    <div class="md:col-span-4 bg-primary text-white rounded-[2rem] p-8 sm:p-10 flex flex-col editorial-shadow hover-lift">
+      <div class="mb-6 rounded-2xl overflow-hidden aspect-[4/3] bg-primary-dark/20">
+        <img data-content-src="services.items[${index}].image" src="${item.image}" alt="${item.title}" class="w-full h-full object-cover" />
+      </div>
+      <h3 class="font-headline text-3xl sm:text-4xl mb-4" data-content="services.items[${index}].title">${item.title}</h3>
+      <p class="text-emerald-50/80 leading-relaxed mb-8" data-content="services.items[${index}].description">${item.description}</p>
+      ${featuresHtml}
+      <button class="open-modal mt-8 self-start inline-flex items-center gap-2 text-sm font-bold text-emerald-100 hover:text-white hover:underline" data-modal="${item.modal_id}">
+        Descubrir
+        <span class="material-symbols-outlined text-base">arrow_forward</span>
+      </button>
+    </div>
+  `;
+}
+
+function renderSmallCard(item, index) {
+  return `
+    <div class="md:col-span-4 bg-surface-container-low rounded-[2rem] editorial-shadow overflow-hidden flex flex-col">
+      <div class="relative overflow-hidden aspect-[4/3]">
+        <img data-content-src="services.items[${index}].image" src="${item.image}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover" />
+      </div>
+      <div class="p-8 sm:p-10 flex flex-col flex-1">
+        <h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4" data-content="services.items[${index}].title">${item.title}</h3>
+        <p class="text-on-surface-variant leading-relaxed mb-auto" data-content="services.items[${index}].description">${item.description}</p>
+        <button class="open-modal mt-8 self-start inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline" data-modal="${item.modal_id}">
+          Descubrir
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderServiceModal(item, index) {
+  return `
+    <div id="${item.modal_id}" class="modal-overlay" hidden aria-hidden="true" aria-labelledby="modal-title-${item.id}">
+      <div class="modal-card grid grid-cols-1 md:grid-cols-2 max-w-3xl" role="dialog" aria-modal="true" tabindex="-1">
+        <button class="close-modal absolute top-3 right-3 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-surface-container-low/80 hover:bg-surface-container-high transition-colors" aria-label="Cerrar">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="relative min-h-[260px] md:min-h-0 bg-surface-container rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none overflow-hidden">
+          <img src="${item.image}" alt="${item.title}" class="absolute inset-0 w-full h-full object-cover" />
+        </div>
+        <div class="p-8 sm:p-10 md:p-12 relative">
+          <span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">${item.modal_subtitle || 'Tratamiento'}</span>
+          <h2 id="modal-title-${item.id}" class="font-headline text-3xl sm:text-4xl text-emerald-900 mt-3 mb-6">${item.modal_title}</h2>
+          <p class="text-on-surface-variant leading-relaxed mb-4">${item.modal_description}</p>
+          <p class="text-on-surface-variant leading-relaxed mb-8">${item.modal_content}</p>
+          <a href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener" class="btn-primary inline-flex items-center gap-2 text-sm font-bold">
+            Reservar cita
+            <span class="material-symbols-outlined text-base">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function injectServices() {
   const services = contentData?.services;
   if (!services) return;
 
-  // Actualizar label y título de la sección servicios
+  // Update section header
   const labelEl = document.querySelector('[data-content="services.label"]');
   const titleEl = document.querySelector('[data-content="services.title"]');
   const subtitleEl = document.querySelector('[data-content="services.subtitle"]');
-
   if (labelEl) labelEl.textContent = services.label;
   if (titleEl) titleEl.textContent = services.title;
-  if (subtitleEl) {
-    subtitleEl.innerHTML = services.subtitle;
-    subtitleEl.classList.add('italic');
+  if (subtitleEl) { subtitleEl.innerHTML = services.subtitle; subtitleEl.classList.add('italic'); }
+
+  // Generate cards
+  const grid = document.getElementById('servicesGrid');
+  if (grid && services.items) {
+    grid.innerHTML = services.items.map((item, index) => {
+      switch (item.layout) {
+        case 'large': return renderLargeCard(item, index);
+        case 'highlight': return renderHighlightCard(item, index);
+        case 'small': return renderSmallCard(item, index);
+        default: return renderSmallCard(item, index);
+      }
+    }).join('');
+  }
+
+  // Generate modals
+  const modalsContainer = document.getElementById('servicesModals');
+  if (modalsContainer && services.items) {
+    modalsContainer.innerHTML = services.items.map((item, index) => renderServiceModal(item, index)).join('');
   }
 }
 
@@ -377,9 +477,8 @@ function injectAllContent() {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.setAttribute('content', contentData.site.description);
 
-  // 2. Inyecciones básicas
+  // 2. Inyecciones básicas (sin imágenes — se hace al final para cubrir elementos dinámicos)
   injectTextContent();
-  injectImageSources();
   injectLinkHrefs();
   injectAnchorHrefs();
   injectIcons();
@@ -388,15 +487,17 @@ function injectAllContent() {
   injectPhilosophyPillars();
   injectServices();
   injectPathologies();
-  renderPathologies();
   injectPricing();
   injectOrganizations();
   injectContactInfo();
   injectFooter();
   injectContactForm();
 
-  // 4. Testimonialesdinámicos
+  // 4. Testimoniales dinámicos
   injectTestimonials();
+
+  // 5. Inyectar imágenes AL FINAL para cubrir elementos generados dinámicamente
+  injectImageSources();
 
 }
 
@@ -417,51 +518,6 @@ async function loadContent() {
   } catch (error) {
     console.error('❌ Error cargando content.json:', error);
     return null;
-  }
-}
-
-async function renderPathologies() {
-  const grid = document.getElementById("pathologiesGrid");
-  console.log("Grid encontrado:", !!grid);
-  if (!grid) return;
-
-  try {
-    // Intentar desde GitHub raw (siempre tiene la última versión)
-    // Si falla (ej: local), usar content.json local como fallback
-    let content;
-    try {
-      const ghResponse = await fetch(
-        "https://raw.githubusercontent.com/alexrilo/landing_marcos_agentes/main/content.json"
-      );
-      if (ghResponse.ok) {
-        console.log("Contenido cargado desde GitHub");
-        content = await ghResponse.json();
-      }
-    } catch {
-      // Fallback local para desarrollo
-      const localResponse = await fetch("content.json");
-      content = await localResponse.json();
-    }
-
-    const items = content.pathologies?.items || [];
-
-    grid.innerHTML = items.map((item) => {
-      const isIcon = item.icon && !item.image;
-      const mediaHtml = isIcon
-        ? `<span class="material-symbols-outlined text-primary text-6xl">${item.icon}</span>`
-        : `<img alt="${item.name}" class="w-28 h-28 object-contain" src="${item.image}" />`;
-
-      return `
-                <div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-                    <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-                        ${mediaHtml}
-                    </div>
-                    <span class="font-headline text-2xl sm:text-3xl">${item.name}</span>
-                </div>
-            `;
-    }).join("");
-  } catch (error) {
-    console.error("Error cargando patologías:", error);
   }
 }
 

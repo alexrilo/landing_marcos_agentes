@@ -49,10 +49,10 @@
       {
         "id": "terapia-manual",
         "title": "Terapia Manual Avanzada",
-        "description": "Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidad.",
+        "description": "Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidaad.",
         "image": "assets/images/terapiamanual.webp",
         "modal_id": "modal-terapia-manual",
-        "modal_title": "Terapia Manual",
+        "modal_title": "Terapia Manual Prueba",
         "modal_subtitle": "Tratamiento",
         "modal_description": "Es una tecnica de la fisioterapia en la que el profesional utiliza las manos para tratar distintas alteraciones del sistema musculoesqueletico.",
         "modal_content": "Entre ellas destacan los masajes terapeuticos, las movilizaciones articulares y las manipulaciones articulares para reducir dolor y recuperar movilidad.",

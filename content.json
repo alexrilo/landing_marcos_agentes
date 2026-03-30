@@ -48,7 +48,7 @@
     "items": [
       {
         "id": "terapia-manual",
-        "title": "Terapia Manual Avanzadad",
+        "title": "Terapia Manual Avanzada",
         "description": "Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidad.",
         "image": "assets/images/terapiamanual.webp",
         "modal_id": "modal-terapia-manual",

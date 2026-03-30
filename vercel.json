@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "public": true,
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": ".",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

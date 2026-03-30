@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="dashboard-layout">
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <!-- Navbar -->
     <nav class="dashboard-navbar">
       <div class="navbar-content">
@@ -18,6 +19,9 @@
           <span class="badge">Pre-Staging</span>
         </div>
         <div class="navbar-actions">
+          <button id="menuToggle" class="btn btn-ghost menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
           <button id="publishBtn" class="btn btn-success">
             <span class="material-symbols-outlined">publish</span>
             Publicar a Prod
@@ -32,6 +36,11 @@
     <div class="dashboard-container">
       <!-- Sidebar -->
       <aside class="dashboard-sidebar">
+        <div class="sidebar-close-wrapper">
+          <button id="sidebarClose" class="btn btn-ghost sidebar-close" aria-label="Cerrar menú">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+        </div>
         <div class="sidebar-menu">
           <h3>Secciones</h3>
           <button class="menu-item active" data-section="hero">

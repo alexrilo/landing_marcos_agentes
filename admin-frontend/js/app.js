@@ -112,6 +112,49 @@ class AdminApp {
       });
     });
 
+    // === Mobile sidebar toggle ===
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebarClose = document.getElementById('sidebarClose');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+    const openSidebar = () => {
+      document.body.classList.add('sidebar-open');
+      sidebarOverlay.classList.add('active');
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+    };
+
+    const closeSidebar = () => {
+      document.body.classList.remove('sidebar-open');
+      sidebarOverlay.classList.remove('active');
+      if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    if (menuToggle) {
+      menuToggle.addEventListener('click', openSidebar);
+    }
+
+    if (sidebarClose) {
+      sidebarClose.addEventListener('click', closeSidebar);
+    }
+
+    if (sidebarOverlay) {
+      sidebarOverlay.addEventListener('click', closeSidebar);
+    }
+
+    // Close sidebar on section click (mobile)
+    menuItems.forEach(item => {
+      item.addEventListener('click', () => {
+        closeSidebar();
+      });
+    });
+
+    // ESC key closes sidebar
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && document.body.classList.contains('sidebar-open')) {
+        closeSidebar();
+      }
+    });
+
     // Primero, mostrar Hero
     this.showSection('hero');
 

@@ -194,10 +194,10 @@ function injectTestimonials() {
   testimonials.forEach(item => {
     const card = document.createElement('div');
     card.className = container.dataset.testimonialClass || 'min-w-[86%] sm:min-w-[420px] md:min-w-[450px] bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl snap-center italic';
-    
+
     // Generate star rating HTML
     const starsHtml = Array(item.rating).fill('<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: \'FILL\' 1;">star</span>').join('');
-    
+
     card.innerHTML = `
       <div class="mb-6 flex gap-1">
         ${starsHtml}
@@ -218,33 +218,30 @@ function injectTestimonials() {
 }
 
 /**
- * Inyecta contenido de las patologías
+ * Inyecta contenido de las patologías — genera los cards dinámicamente desde content.json
  */
 function injectPathologies() {
   const pathologies = contentData?.pathologies?.items;
   if (!pathologies) return;
 
-  const cards = document.querySelectorAll('[data-pathology]');
-  cards.forEach((card, index) => {
-    if (pathologies[index]) {
-      const path = pathologies[index];
-      const imgEl = card.querySelector('img[data-content-src]');
-      const nameEl = card.querySelector('[data-content^="pathologies.items["]');
+  const grid = document.getElementById('pathologiesGrid');
+  if (!grid) return;
 
-      if (imgEl && path.image) {
-        imgEl.src = path.image;
-        imgEl.alt = path.name;
-      }
-      if (nameEl) nameEl.textContent = path.name;
+  grid.innerHTML = pathologies.map((item) => {
+    const isIcon = item.icon && !item.image;
+    const mediaHtml = isIcon
+      ? `<span class="material-symbols-outlined text-primary text-6xl">${item.icon}</span>`
+      : `<img alt="${item.name}" class="w-28 h-28 object-contain" src="${item.image}" />`;
 
-      // Manejar icono si existe
-      const iconEl = card.querySelector('[data-icon]');
-      if (iconEl && path.icon) {
-        iconEl.setAttribute('data-icon', path.icon);
-        iconEl.textContent = path.icon;
-      }
-    }
-  });
+    return `
+      <div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+        <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+          ${mediaHtml}
+        </div>
+        <span class="font-headline text-2xl sm:text-3xl">${item.name}</span>
+      </div>
+    `;
+  }).join("");
 }
 
 /**
@@ -391,6 +388,7 @@ function injectAllContent() {
   injectPhilosophyPillars();
   injectServices();
   injectPathologies();
+  renderPathologies();
   injectPricing();
   injectOrganizations();
   injectContactInfo();
@@ -410,15 +408,60 @@ async function loadContent() {
     const response = await fetch(`content.json?v=${timestamp}`);
     if (!response.ok) throw new Error('No se pudo cargar content.json');
     contentData = await response.json();
-    
+
     // Actualizar documento
     document.title = contentData.site.title;
     document.querySelector('meta[name="description"]')?.setAttribute('content', contentData.site.description);
-    
+
     return contentData;
   } catch (error) {
     console.error('❌ Error cargando content.json:', error);
     return null;
+  }
+}
+
+async function renderPathologies() {
+  const grid = document.getElementById("pathologiesGrid");
+  console.log("Grid encontrado:", !!grid);
+  if (!grid) return;
+
+  try {
+    // Intentar desde GitHub raw (siempre tiene la última versión)
+    // Si falla (ej: local), usar content.json local como fallback
+    let content;
+    try {
+      const ghResponse = await fetch(
+        "https://raw.githubusercontent.com/alexrilo/landing_marcos_agentes/main/content.json"
+      );
+      if (ghResponse.ok) {
+        console.log("Contenido cargado desde GitHub");
+        content = await ghResponse.json();
+      }
+    } catch {
+      // Fallback local para desarrollo
+      const localResponse = await fetch("content.json");
+      content = await localResponse.json();
+    }
+
+    const items = content.pathologies?.items || [];
+
+    grid.innerHTML = items.map((item) => {
+      const isIcon = item.icon && !item.image;
+      const mediaHtml = isIcon
+        ? `<span class="material-symbols-outlined text-primary text-6xl">${item.icon}</span>`
+        : `<img alt="${item.name}" class="w-28 h-28 object-contain" src="${item.image}" />`;
+
+      return `
+                <div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        ${mediaHtml}
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">${item.name}</span>
+                </div>
+            `;
+    }).join("");
+  } catch (error) {
+    console.error("Error cargando patologías:", error);
   }
 }
 

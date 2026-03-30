@@ -1,2 +1,3 @@
 node_modules/
 admin-backend/node_modules/
+.env

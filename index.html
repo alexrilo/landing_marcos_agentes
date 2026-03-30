@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 
-<html class="scroll-smooth" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Marcos Blazquez | Fisioterapia a domicilio</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "outline-variant": "#c2c9bb",
-              "on-primary-container": "#1a4612",
-              "inverse-on-surface": "#eef1ef",
-              "secondary": "#525f74",
-              "surface-container": "#ebefec",
-              "inverse-primary": "#a1d491",
-              "inverse-surface": "#2d3130",
-              "surface-bright": "#f7faf7",
-              "on-tertiary": "#ffffff",
-              "on-error": "#ffffff",
-              "surface-dim": "#d7dbd8",
-              "on-secondary-fixed-variant": "#3a475b",
-              "on-tertiary-fixed": "#171d1a",
-              "on-primary": "#ffffff",
-              "primary-fixed-dim": "#a1d491",
-              "on-tertiary-fixed-variant": "#424845",
-              "surface-container-highest": "#e0e3e0",
-              "on-background": "#181c1b",
-              "on-primary-fixed": "#002200",
-              "primary-container": "#83b474",
-              "surface": "#f7faf7",
-              "on-surface": "#181c1b",
-              "surface-container-high": "#e6e9e6",
-              "on-tertiary-container": "#393e3b",
-              "error": "#ba1a1a",
-              "tertiary-fixed": "#dfe4e0",
-              "tertiary-container": "#a4a9a5",
-              "error-container": "#ffdad6",
-              "on-secondary-container": "#58657a",
-              "on-secondary": "#ffffff",
-              "surface-container-lowest": "#ffffff",
-              "tertiary": "#5a605d",
-              "on-secondary-fixed": "#0e1c2e",
-              "on-primary-fixed-variant": "#24501c",
-              "background": "#f7faf7",
-              "secondary-container": "#d6e3fc",
-              "surface-container-low": "#f1f4f1",
-              "on-surface-variant": "#42493e",
-              "surface-tint": "#3c6932",
-              "surface-variant": "#e0e3e0",
-              "on-error-container": "#93000a",
-              "secondary-fixed": "#d6e3fc",
-              "secondary-fixed-dim": "#bac7df",
-              "tertiary-fixed-dim": "#c3c8c4",
-              "outline": "#72796d",
-              "primary": "#3c6932",
-              "primary-fixed": "#bcf1ab"
+<html class="scroll-smooth" lang="es">
+
+<!-- <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Marcos Blazquez | Fisioterapia a domicilio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline-variant": "#c2c9bb",
+                        "on-primary-container": "#1a4612",
+                        "inverse-on-surface": "#eef1ef",
+                        "secondary": "#525f74",
+                        "surface-container": "#ebefec",
+                        "inverse-primary": "#a1d491",
+                        "inverse-surface": "#2d3130",
+                        "surface-bright": "#f7faf7",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d7dbd8",
+                        "on-secondary-fixed-variant": "#3a475b",
+                        "on-tertiary-fixed": "#171d1a",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a1d491",
+                        "on-tertiary-fixed-variant": "#424845",
+                        "surface-container-highest": "#e0e3e0",
+                        "on-background": "#181c1b",
+                        "on-primary-fixed": "#002200",
+                        "primary-container": "#83b474",
+                        "surface": "#f7faf7",
+                        "on-surface": "#181c1b",
+                        "surface-container-high": "#e6e9e6",
+                        "on-tertiary-container": "#393e3b",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#dfe4e0",
+                        "tertiary-container": "#a4a9a5",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#58657a",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#5a605d",
+                        "on-secondary-fixed": "#0e1c2e",
+                        "on-primary-fixed-variant": "#24501c",
+                        "background": "#f7faf7",
+                        "secondary-container": "#d6e3fc",
+                        "surface-container-low": "#f1f4f1",
+                        "on-surface-variant": "#42493e",
+                        "surface-tint": "#3c6932",
+                        "surface-variant": "#e0e3e0",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#d6e3fc",
+                        "secondary-fixed-dim": "#bac7df",
+                        "tertiary-fixed-dim": "#c3c8c4",
+                        "outline": "#72796d",
+                        "primary": "#3c6932",
+                        "primary-fixed": "#bcf1ab"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
             },
-            fontFamily: {
-              "headline": ["Newsreader", "serif"],
-              "body": ["Manrope", "sans-serif"],
-              "label": ["Manrope", "sans-serif"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
+        }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
         }
+
         .editorial-shadow {
             box-shadow: 0 24px 48px -12px rgba(45, 49, 48, 0.06);
         }
+
         .glass-nav {
             backdrop-filter: blur(20px);
         }
+
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -92,9 +103,11 @@
             background: rgba(24, 28, 27, 0.48);
             backdrop-filter: blur(10px);
         }
+
         .modal-overlay[hidden] {
             display: none;
         }
+
         .modal-card {
             position: relative;
             width: min(920px, 100%);
@@ -103,6 +116,7 @@
             overflow: hidden;
             box-shadow: 0 30px 70px rgba(24, 28, 27, 0.18);
         }
+
         .modal-close {
             position: absolute;
             top: 1rem;
@@ -113,20 +127,24 @@
             background: rgba(255, 255, 255, 0.92);
             color: #1b261f;
         }
+
         body {
             background-color: #f7faf7;
             color: #181c1b;
             font-family: 'Manrope', sans-serif;
         }
+
         .reveal {
             opacity: 0;
             transform: translateY(32px);
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
+
         .reveal.is-visible {
             opacity: 1;
             transform: translateY(0);
         }
+
         .mobile-menu-panel {
             max-height: 0;
             opacity: 0;
@@ -135,57 +153,71 @@
             pointer-events: none;
             transition: max-height 0.45s ease, opacity 0.35s ease, transform 0.35s ease;
         }
+
         .mobile-menu-panel.is-open {
             max-height: 24rem;
             opacity: 1;
             transform: translateY(0);
             pointer-events: auto;
         }
+
         @media (prefers-reduced-motion: reduce) {
             .reveal {
                 opacity: 1;
                 transform: none;
                 transition: none;
             }
+
             .mobile-menu-panel {
                 transition: none;
             }
         }
+
         @media (hover: hover) and (pointer: fine) {
             .hover-lift:hover {
                 transform: translateY(-0.35rem);
             }
+
             .hover-surface:hover {
                 background-color: #ffffff;
             }
+
             .hover-scale:hover {
                 transform: scale(1.02);
             }
+
             .hover-arrow:hover .hover-arrow-icon {
                 transform: translateX(0.4rem);
             }
+
             .hover-icon:hover {
                 background: rgba(255, 255, 255, 0.2);
             }
+
             .hover-photo:hover {
                 filter: grayscale(0);
             }
+
             .hover-outline:hover {
                 background: #3c6932;
                 color: #ffffff;
             }
+
             .hover-text-bright:hover {
                 color: #ffffff;
             }
+
             .footer-link:hover {
                 color: #14532d;
             }
         }
+
         @media (max-width: 767px) {
             .modal-overlay {
                 padding: 1rem;
                 align-items: end;
             }
+
             .modal-card {
                 width: 100%;
                 max-height: min(92vh, 860px);
@@ -193,6 +225,7 @@
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
             }
+
             .mobile-scroll-row {
                 margin-inline: -0.5rem;
                 padding-inline: 0.5rem;
@@ -200,695 +233,1132 @@
             }
         }
     </style>
+</head> -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Marcos Blazquez | Fisioterapia a domicilio</title>
+
+  <!-- CSS compilado de Tailwind -->
+
+  <link rel="stylesheet" href="/dist/output.css" />
+
+  <!-- Google Fonts -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Manrope:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Material Icons (solo UNA vez) -->
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos personalizados -->
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .editorial-shadow {
+      box-shadow: 0 24px 48px -12px rgba(45, 49, 48, 0.06);
+    }
+
+    .glass-nav {
+      backdrop-filter: blur(20px);
+    }
+
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background: rgba(24, 28, 27, 0.48);
+      backdrop-filter: blur(10px);
+    }
+
+    .modal-overlay[hidden] {
+      display: none;
+    }
+
+    .modal-card {
+      position: relative;
+      width: min(920px, 100%);
+      background: #f8fbf7;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 30px 70px rgba(24, 28, 27, 0.18);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.92);
+      color: #1b261f;
+    }
+
+    body {
+      background-color: #f7faf7;
+      color: #181c1b;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mobile-menu-panel {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(-0.75rem);
+      pointer-events: none;
+      transition: max-height 0.45s ease, opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .mobile-menu-panel.is-open {
+      max-height: 24rem;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      .mobile-menu-panel {
+        transition: none;
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .hover-lift:hover {
+        transform: translateY(-0.35rem);
+      }
+
+      .hover-surface:hover {
+        background-color: #ffffff;
+      }
+
+      .hover-scale:hover {
+        transform: scale(1.02);
+      }
+
+      .hover-arrow:hover .hover-arrow-icon {
+        transform: translateX(0.4rem);
+      }
+
+      .hover-icon:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .hover-photo:hover {
+        filter: grayscale(0);
+      }
+
+      .hover-outline:hover {
+        background: #3c6932;
+        color: #ffffff;
+      }
+
+      .hover-text-bright:hover {
+        color: #ffffff;
+      }
+
+      .footer-link:hover {
+        color: #14532d;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .modal-overlay {
+        padding: 1rem;
+        align-items: end;
+      }
+
+      .modal-card {
+        width: 100%;
+        max-height: min(92vh, 860px);
+        overflow: auto;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .mobile-scroll-row {
+        margin-inline: -0.5rem;
+        padding-inline: 0.5rem;
+        scroll-padding-inline: 0.5rem;
+      }
+    }
+  </style>
+
 </head>
+
 <body class="bg-surface text-on-surface">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/60 dark:bg-emerald-950/60 glass-nav shadow-[0_24px_48px_-12px_rgba(45,49,48,0.06)]">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
-<div class="flex items-center justify-between gap-4">
-<div class="text-lg sm:text-2xl font-serif italic text-emerald-900 dark:text-emerald-50 leading-tight max-w-[14rem] sm:max-w-none">
-                Marcos Blazquez Fisioterapia
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/60 dark:bg-emerald-950/60 glass-nav shadow-[0_24px_48px_-12px_rgba(45,49,48,0.06)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
+            <div class="flex items-center justify-between gap-4">
+                <div
+                    class="text-lg sm:text-2xl font-serif italic text-emerald-900 dark:text-emerald-50 leading-tight max-w-[14rem] sm:max-w-none">
+                    Marcos Blazquez Fisioterapia
+                </div>
+                <div class="hidden md:flex items-center gap-8 font-['Manrope'] text-sm tracking-wide">
+                    <a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift"
+                        href="#philosophy">Filosofia</a>
+                    <a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift"
+                        href="#services">Servicios</a>
+                    <a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift"
+                        href="#experience">Experiencia</a>
+                    <a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift"
+                        href="#pricing">Tarifas</a>
+                </div>
+                <div class="flex items-center gap-3">
+                    <a class="hidden md:inline-flex self-start md:self-auto bg-gradient-to-br from-primary to-primary-container text-white px-5 sm:px-6 py-2.5 rounded-full font-label text-sm font-bold editorial-shadow transition-transform duration-500 hover-lift"
+                        href="#contacto">Haz tu consulta</a>
+                    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu"
+                        class="md:hidden w-12 h-12 rounded-full border border-emerald-900/10 bg-white/80 text-emerald-900 flex items-center justify-center editorial-shadow"
+                        id="mobile-menu-button" type="button">
+                        <span class="material-symbols-outlined text-[1.65rem]" id="mobile-menu-icon">menu</span>
+                    </button>
+                </div>
             </div>
-<div class="hidden md:flex items-center gap-8 font-['Manrope'] text-sm tracking-wide">
-<a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift" href="#philosophy">Filosofia</a>
-<a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift" href="#services">Servicios</a>
-<a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift" href="#experience">Experiencia</a>
-<a class="text-emerald-900/70 dark:text-emerald-100/70 font-medium transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover-lift" href="#pricing">Tarifas</a>
-</div>
-<div class="flex items-center gap-3">
-<a class="hidden md:inline-flex self-start md:self-auto bg-gradient-to-br from-primary to-primary-container text-white px-5 sm:px-6 py-2.5 rounded-full font-label text-sm font-bold editorial-shadow transition-transform duration-500 hover-lift" href="#contacto">Haz tu consulta</a>
-<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="md:hidden w-12 h-12 rounded-full border border-emerald-900/10 bg-white/80 text-emerald-900 flex items-center justify-center editorial-shadow" id="mobile-menu-button" type="button">
-<span class="material-symbols-outlined text-[1.65rem]" id="mobile-menu-icon">menu</span>
-</button>
-</div>
-</div>
-<div class="mobile-menu-panel md:hidden mt-4" hidden id="mobile-menu">
-<div class="rounded-[1.75rem] border border-emerald-900/8 bg-white/90 px-5 py-5 shadow-[0_18px_48px_-18px_rgba(24,28,27,0.22)] backdrop-blur-xl">
-<div class="flex flex-col gap-1 text-sm font-['Manrope'] tracking-[0.16em] uppercase text-emerald-900/78">
-<a class="mobile-menu-link rounded-2xl px-4 py-3 bg-emerald-50/70" href="#philosophy">Filosofia</a>
-<a class="mobile-menu-link rounded-2xl px-4 py-3" href="#services">Servicios</a>
-<a class="mobile-menu-link rounded-2xl px-4 py-3" href="#experience">Experiencia</a>
-<a class="mobile-menu-link rounded-2xl px-4 py-3" href="#pricing">Tarifas</a>
-<a class="mobile-menu-link rounded-2xl px-4 py-3" href="#contacto">Contacto</a>
-</div>
-<a class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-bold text-white editorial-shadow" href="#contacto">Haz tu consulta</a>
-</div>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative min-h-[100svh] md:min-h-screen flex items-center pt-32 sm:pt-36 md:pt-28 pb-10 sm:pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
-<div class="md:hidden relative reveal">
-<div class="rounded-[2rem] bg-gradient-to-b from-emerald-50 via-white to-white p-3 shadow-[0_28px_60px_-26px_rgba(24,28,27,0.18)]">
-<div class="aspect-[4/5] rounded-[1.6rem] bg-surface-container-highest overflow-hidden flex items-center justify-center">
-<img alt="Marcos Blazquez, fisioterapeuta a domicilio" class="w-full h-full object-contain grayscale scale-[0.94]" src="assets/images/marcos.webp"/>
-</div>
-</div>
-</div>
-<div class="md:col-span-7 space-y-6 sm:space-y-8 z-10 reveal">
-<span class="inline-block px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase">Premium Physiotherapy</span>
-<h1 class="font-headline text-[2.9rem] sm:text-6xl lg:text-8xl text-emerald-900 leading-[0.98] sm:leading-[1.06] -tracking-[0.02em] max-w-4xl">
+            <div class="mobile-menu-panel md:hidden mt-4" hidden id="mobile-menu">
+                <div
+                    class="rounded-[1.75rem] border border-emerald-900/8 bg-white/90 px-5 py-5 shadow-[0_18px_48px_-18px_rgba(24,28,27,0.22)] backdrop-blur-xl">
+                    <div
+                        class="flex flex-col gap-1 text-sm font-['Manrope'] tracking-[0.16em] uppercase text-emerald-900/78">
+                        <a class="mobile-menu-link rounded-2xl px-4 py-3 bg-emerald-50/70"
+                            href="#philosophy">Filosofia</a>
+                        <a class="mobile-menu-link rounded-2xl px-4 py-3" href="#services">Servicios</a>
+                        <a class="mobile-menu-link rounded-2xl px-4 py-3" href="#experience">Experiencia</a>
+                        <a class="mobile-menu-link rounded-2xl px-4 py-3" href="#pricing">Tarifas</a>
+                        <a class="mobile-menu-link rounded-2xl px-4 py-3" href="#contacto">Contacto</a>
+                    </div>
+                    <a class="mt-5 inline-flex w-full items-center justify-center rounded-full bg-primary px-6 py-3.5 text-sm font-bold text-white editorial-shadow"
+                        href="#contacto">Haz tu consulta</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+        class="relative min-h-[100svh] md:min-h-screen flex items-center pt-32 sm:pt-36 md:pt-28 pb-10 sm:pb-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            <div class="md:hidden relative reveal">
+                <div
+                    class="rounded-[2rem] bg-gradient-to-b from-emerald-50 via-white to-white p-3 shadow-[0_28px_60px_-26px_rgba(24,28,27,0.18)]">
+                    <div
+                        class="aspect-[4/5] rounded-[1.6rem] bg-surface-container-highest overflow-hidden flex items-center justify-center">
+                        <img alt="Marcos Blazquez, fisioterapeuta a domicilio"
+                            class="w-full h-full object-contain grayscale scale-[0.94]"
+                            src="assets/images/marcos.webp" />
+                    </div>
+                </div>
+            </div>
+            <div class="md:col-span-7 space-y-6 sm:space-y-8 z-10 reveal">
+                <span
+                    class="inline-block px-4 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase">Premium
+                    Physiotherapy</span>
+                <h1
+                    class="font-headline text-[2.9rem] sm:text-6xl lg:text-8xl text-emerald-900 leading-[0.98] sm:leading-[1.06] -tracking-[0.02em] max-w-4xl">
                     Recupera tu bienestar con <span class="italic font-normal">fisioterapia</span> a domicilio.
                 </h1>
-<p class="font-body text-[1.02rem] sm:text-lg text-on-surface-variant max-w-xl leading-relaxed">
-                    Te ofrezco un enfoque clinico de alta gama, trasladando la precision de la fisioterapia manual, deportiva y terapeutica a la comodidad de tu hogar.
+                <p class="font-body text-[1.02rem] sm:text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    Te ofrezco un enfoque clinico de alta gama, trasladando la precision de la fisioterapia manual,
+                    deportiva y terapeutica a la comodidad de tu hogar.
                 </p>
-<div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 pt-2 sm:pt-4">
-<a class="bg-primary text-white px-7 sm:px-8 py-4 rounded-full font-label font-bold text-base sm:text-lg editorial-shadow transition-all duration-300 hover-lift text-center" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 pt-2 sm:pt-4">
+                    <a class="bg-primary text-white px-7 sm:px-8 py-4 rounded-full font-label font-bold text-base sm:text-lg editorial-shadow transition-all duration-300 hover-lift text-center"
+                        href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                        target="_blank" rel="noopener noreferrer">
                         Reservar cita
                     </a>
-<a class="text-primary font-bold flex items-center gap-2 hover-arrow" href="#services">
+                    <a class="text-primary font-bold flex items-center gap-2 hover-arrow" href="#services">
                         Ver servicios
-                        <span class="material-symbols-outlined transition-transform hover-arrow-icon">arrow_forward</span>
-</a>
-</div>
-</div>
-<div class="hidden md:block md:col-span-5 relative reveal">
-<div class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden editorial-shadow transform md:translate-x-12 md:rotate-3">
-<img alt="Marcos Blazquez, fisioterapeuta a domicilio" class="w-full h-full object-cover grayscale transition-all duration-1000 hover-photo" src="assets/images/marcos.webp"/>
-</div>
-<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-xl editorial-shadow hidden md:block border-l-4 border-primary">
-<p class="font-headline italic text-2xl text-primary">"La salud no es la ausencia de dolor, sino la capacidad de sentirte bien en tu propio cuerpo."</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Philosophy Section -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-low" id="philosophy">
-<div class="max-w-4xl mx-auto text-center space-y-12 reveal">
-<h2 class="font-headline text-4xl sm:text-5xl text-emerald-900 leading-tight">
+                        <span
+                            class="material-symbols-outlined transition-transform hover-arrow-icon">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block md:col-span-5 relative reveal">
+                <div
+                    class="aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden editorial-shadow transform md:translate-x-12 md:rotate-3">
+                    <img alt="Marcos Blazquez, fisioterapeuta a domicilio"
+                        class="w-full h-full object-cover grayscale transition-all duration-1000 hover-photo"
+                        src="assets/images/marcos.webp" />
+                </div>
+                <div
+                    class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-xl editorial-shadow hidden md:block border-l-4 border-primary">
+                    <p class="font-headline italic text-2xl text-primary">"La salud no es la ausencia de dolor, sino la
+                        capacidad de sentirte bien en tu propio cuerpo."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Philosophy Section -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-low" id="philosophy">
+        <div class="max-w-4xl mx-auto text-center space-y-12 reveal">
+            <h2 class="font-headline text-4xl sm:text-5xl text-emerald-900 leading-tight">
                 Fisioterapia serena, elegante y adaptada a ti.
             </h2>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 text-left pt-4 sm:pt-8 lg:pt-12">
-<div class="space-y-4">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_awesome">auto_awesome</span>
-<h3 class="font-headline text-2xl">Atención Personalizada</h3>
-<p class="text-on-surface-variant leading-relaxed">Cada sesion se diseña segun tu caso, tu dolor y tus objetivos, sin protocolos genericos.</p>
-</div>
-<div class="space-y-4">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="home_health">home_health</span>
-<h3 class="font-headline text-2xl">Entorno Propio</h3>
-<p class="text-on-surface-variant leading-relaxed">El tratamiento sucede en casa o en tu contexto real, donde el cambio tiene mas sentido y continuidad.</p>
-</div>
-<div class="space-y-4">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="clinical_notes">clinical_notes</span>
-<h3 class="font-headline text-2xl">Rigurosidad Clínica</h3>
-<p class="text-on-surface-variant leading-relaxed">Tecnicas basadas en evidencia, experiencia clinica y criterio honesto para cada sesion.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section (Bento Style) -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface" id="services">
-<div class="max-w-7xl mx-auto reveal">
-<div class="flex flex-col items-center text-center mb-12 sm:mb-16 gap-5 sm:gap-6 max-w-3xl mx-auto">
-<div class="max-w-2xl">
-<span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Especialidades</span>
-<h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl text-emerald-900 mt-4 leading-none">Tratamientos</h2>
-</div>
-<p class="font-body text-on-surface-variant max-w-2xl italic text-base sm:text-lg leading-relaxed">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 text-left pt-4 sm:pt-8 lg:pt-12">
+                <div class="space-y-4">
+                    <span class="material-symbols-outlined text-primary text-4xl"
+                        data-icon="auto_awesome">auto_awesome</span>
+                    <h3 class="font-headline text-2xl">Atención Personalizada</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Cada sesion se diseña segun tu caso, tu dolor y
+                        tus objetivos, sin protocolos genericos.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="material-symbols-outlined text-primary text-4xl"
+                        data-icon="home_health">home_health</span>
+                    <h3 class="font-headline text-2xl">Entorno Propio</h3>
+                    <p class="text-on-surface-variant leading-relaxed">El tratamiento sucede en casa o en tu contexto
+                        real, donde el cambio tiene mas sentido y continuidad.</p>
+                </div>
+                <div class="space-y-4">
+                    <span class="material-symbols-outlined text-primary text-4xl"
+                        data-icon="clinical_notes">clinical_notes</span>
+                    <h3 class="font-headline text-2xl">Rigurosidad Clínica</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Tecnicas basadas en evidencia, experiencia
+                        clinica y criterio honesto para cada sesion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section (Bento Style) -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface" id="services">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="flex flex-col items-center text-center mb-12 sm:mb-16 gap-5 sm:gap-6 max-w-3xl mx-auto">
+                <div class="max-w-2xl">
+                    <span
+                        class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Especialidades</span>
+                    <h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl text-emerald-900 mt-4 leading-none">
+                        Tratamientos</h2>
+                </div>
+                <p class="font-body text-on-surface-variant max-w-2xl italic text-base sm:text-lg leading-relaxed">
                     Tecnicas utiles de verdad para recuperar funcion, reducir dolor y volver a moverte con confianza.
                 </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Service 1 -->
-<button class="md:col-span-8 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 group relative overflow-hidden text-left open-modal hover-surface hover-arrow" data-modal="modal-terapia-manual" type="button">
-<div class="relative z-10 flex flex-col md:flex-row h-full gap-8 lg:gap-10 items-center min-h-[280px] sm:min-h-[320px]">
-<div class="w-full md:w-[38%] shrink-0">
-<div class="w-full aspect-[4/3] sm:aspect-square rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 overflow-hidden">
-<img alt="Terapia manual" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]" src="assets/images/terapiamanual.webp"/>
-</div>
-</div>
-<div class="flex-1">
-<h3 class="font-headline text-[2.1rem] sm:text-4xl text-emerald-900 mb-4 leading-[1.02]">Terapia Manual Avanzada</h3>
-<p class="text-on-surface-variant max-w-md leading-relaxed">Masoterapia, movilizacion y manipulacion articular orientadas a disminuir dolor y recuperar movilidad.</p>
-<div class="flex items-center gap-4 text-primary font-bold">
-<span>Más información</span>
-<span class="material-symbols-outlined transition-transform hover-arrow-icon">trending_flat</span>
-</div>
-</div>
-</div>
-</button>
-<!-- Service 2 -->
-<button class="md:col-span-4 bg-primary text-white p-6 sm:p-8 lg:p-10 rounded-xl transition-transform duration-500 text-left open-modal hover-lift" data-modal="modal-fisioterapia-deportiva" type="button">
-<div class="w-full aspect-[4/3] rounded-[2rem] bg-white/10 flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
-<img alt="Fisioterapia deportiva" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]" src="assets/images/vendajefuncional.webp"/>
-</div>
-<h3 class="font-headline text-3xl sm:text-4xl mb-4">Fisioterapia Deportiva</h3>
-<p class="text-emerald-50/80 leading-relaxed mb-8">Prevencion de recaidas, readaptacion al esfuerzo y mejora del rendimiento deportivo.</p>
-<ul class="space-y-3 font-label text-sm font-medium">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Prevención de lesiones</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Readaptación al esfuerzo</li>
-</ul>
-<div class="flex items-center gap-4 text-white font-bold mt-8">
-<span>Más información</span>
-<span class="material-symbols-outlined">trending_flat</span>
-</div>
-</button>
-<!-- Service 3 -->
-<button class="md:col-span-4 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 text-left open-modal hover-surface" data-modal="modal-puncion-seca" type="button">
-<div class="w-full aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
-<img alt="Puncion seca" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]" src="assets/images/puncionseca.webp"/>
-</div>
-<h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Punción Seca</h3>
-<p class="text-on-surface-variant leading-relaxed">Tecnica dirigida a disminuir tension muscular, aliviar dolor y acelerar la recuperacion del tejido.</p>
-<div class="flex items-center gap-4 text-primary font-bold mt-8">
-<span>Más información</span>
-<span class="material-symbols-outlined">trending_flat</span>
-</div>
-</button>
-<!-- Service 4 -->
-<button class="md:col-span-4 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 text-left open-modal hover-surface" data-modal="modal-electropuncion" type="button">
-<div class="w-full aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
-<img alt="Electropuncion y neuromodulacion" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]" src="assets/images/electropuncion.webp"/>
-</div>
-<h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Electropunción y Neuromodulación</h3>
-<p class="text-on-surface-variant leading-relaxed">Impulsos electricos aplicados con precision para modular dolor y mejorar funcion neuromuscular.</p>
-<div class="flex items-center gap-4 text-primary font-bold mt-8">
-<span>Más información</span>
-<span class="material-symbols-outlined">trending_flat</span>
-</div>
-</button>
-<!-- Service 5 -->
-<button class="md:col-span-8 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 flex flex-col md:flex-row gap-8 items-center text-left open-modal hover-surface" data-modal="modal-ejercicio-terapeutico" type="button">
-<div class="flex-1">
-<div class="w-full md:hidden aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
-<img alt="Ejercicio terapeutico" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]" src="assets/images/ejercicio_terapeutico.webp"/>
-</div>
-<h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Ejercicio Terapéutico</h3>
-<p class="text-on-surface-variant leading-relaxed">Trabajo progresivo y adaptado para recuperar capacidad funcional, regular el dolor y consolidar cambios entre sesiones.</p>
-<div class="flex items-center gap-4 text-primary font-bold mt-6">
-<span>Más información</span>
-<span class="material-symbols-outlined">trending_flat</span>
-</div>
-</div>
-<div class="hidden md:flex w-full md:w-[38%] aspect-[4/3] md:aspect-square bg-surface-container rounded-[2rem] overflow-hidden items-center justify-center p-4 sm:p-6">
-<img alt="Ejercicio terapeutico" class="w-full h-full object-cover md:object-contain rounded-[1.25rem]" src="assets/images/ejercicio_terapeutico.webp"/>
-</div>
-</button>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-emerald-900 text-white overflow-hidden relative" id="experience">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center reveal">
-<div class="relative order-1 md:order-2 max-w-xl md:max-w-[32rem] mx-auto md:ml-auto md:mr-0 w-full">
-<div class="hidden md:block bg-emerald-800 p-4 rounded-full border border-emerald-700/50 animate-pulse absolute -top-10 -right-10 w-40 h-40 opacity-20"></div>
-<div class="bg-surface-container-lowest p-2 rounded-[1.75rem] md:rounded-2xl md:transform md:-rotate-2 editorial-shadow">
-<img alt="Marcos Blazquez en entorno profesional" class="rounded-[1.35rem] md:rounded-xl w-full h-auto grayscale brightness-75 object-cover" src="assets/images/hospital.webp"/>
-</div>
-</div>
-<div class="space-y-7 sm:space-y-8 relative z-10 order-2 md:order-1 text-center md:text-left">
-<div class="space-y-4 sm:space-y-5">
-<span class="font-label text-xs font-bold tracking-[0.24em] text-emerald-200/80 uppercase">Experiencia</span>
-<h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl leading-tight italic">Sobre Marcos Blázquez</h2>
-</div>
-<div class="space-y-5 sm:space-y-6 font-body text-emerald-100/80 text-base sm:text-lg leading-relaxed">
-<p>He desarrollado mi carrera entre consulta, domicilio y deporte, colaborando con clubes y entornos reales de rendimiento como <span class="text-white font-bold">Triana Club de Futbol</span> y <span class="text-white font-bold">A.D. Naya</span>.</p>
-<p>Mi filosofia une terapia manual precisa, ejercicio terapeutico y educacion del paciente, entendiendo que el exito del tratamiento depende de comprender cada caso de forma global.</p>
-</div>
-<div class="grid grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 pt-3 sm:pt-5 text-sm">
-<div class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
-<div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
-<img alt="Escudo Triana Club de Futbol" class="w-full h-full object-contain" src="assets/images/triana.webp"/>
-</div>
-<div class="text-3xl font-headline text-primary-fixed mb-1">2021-2022</div>
-<div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Triana C.F.</div>
-</div>
-<div class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
-<div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
-<img alt="Escudo A.D. Naya" class="w-full h-full object-contain" src="assets/images/naya.webp"/>
-</div>
-<div class="text-3xl font-headline text-primary-fixed mb-1">2023+</div>
-<div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">A.D. Naya</div>
-</div>
-<div class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
-<div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
-<img alt="Logo Encadenate" class="w-full h-full object-contain" src="assets/images/encadenate.webp"/>
-</div>
-<div class="text-3xl font-headline text-primary-fixed mb-1">Torrejon</div>
-<div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Encadenate</div>
-</div>
-<div class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
-<div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
-<img alt="Logo Fisioterapia Marcos Blazquez" class="w-full h-full object-contain" src="assets/images/logo.webp"/>
-</div>
-<div class="text-3xl font-headline text-primary-fixed mb-1">+3 anos</div>
-<div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Servicio propio</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Pathologies Section -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface">
-<div class="max-w-7xl mx-auto reveal">
-<div class="text-center mb-14 sm:mb-20 max-w-3xl mx-auto space-y-5 sm:space-y-6">
-<span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Patologias</span>
-<h2 class="font-headline text-4xl sm:text-5xl text-emerald-900">¿Qué podemos tratar?</h2>
-<p class="font-body text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">Trabajo patologias frecuentes para ayudarte a recuperar movilidad, autonomia y confianza en tu dia a dia.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Dolor de espalda" class="w-28 h-28 object-contain" src="assets/images/dolor_de_espalda.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Dolor de espalda</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Disfunciones ATM" class="w-28 h-28 object-contain" src="assets/images/patologia_atm.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">ATM</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Dolor de hombro" class="w-28 h-28 object-contain" src="assets/images/dolordehombro.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Dolor de hombro</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Lesiones deportivas" class="w-28 h-28 object-contain" src="assets/images/lesiondeportiva.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Lesiones deportivas</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Patologias geriatricas" class="w-28 h-28 object-contain" src="assets/images/pacientegeriatrico.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Geriatria</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Puncion seca y sobrecarga" class="w-28 h-28 object-contain" src="assets/images/puncionseca.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Sobrecargas</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<img alt="Ejercicio terapeutico" class="w-28 h-28 object-contain" src="assets/images/ejercicio_terapeutico.webp"/>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Readaptacion</span>
-</div>
-<div class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
-<div class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-6xl" data-icon="more_horiz">more_horiz</span>
-</div>
-<span class="font-headline text-2xl sm:text-3xl">Y mas casos</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing Section -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-high" id="pricing">
-<div class="max-w-7xl mx-auto reveal">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-<div class="space-y-8 text-center lg:text-left max-w-3xl lg:max-w-none mx-auto lg:mx-0">
-<div class="space-y-5 sm:space-y-6">
-<span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Tarifas</span>
-<h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl text-emerald-900">Inversión en tu salud</h2>
-<p class="text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">Transparencia absoluta. Sesiones de aproximadamente una hora y opciones de bono segun zona y seguimiento.</p>
-</div>
-<div class="p-6 bg-surface-container-lowest rounded-xl editorial-shadow inline-block text-left">
-<div class="flex items-center gap-4 text-primary">
-<span class="material-symbols-outlined" data-icon="info">info</span>
-<span class="text-sm font-bold">Todos los materiales incluidos en el precio.</span>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
-<div class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
-<div class="flex justify-between items-start mb-8">
-<div>
-<h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Torrejon de Ardoz</h3>
-<p class="text-on-surface-variant">Sesion a domicilio de 1 hora aprox.</p>
-</div>
-<div class="text-4xl sm:text-5xl font-headline text-primary">45€</div>
-</div>
-<div class="space-y-2 text-sm text-on-surface-variant mb-6">
-<p>Individual: 45€</p>
-<p>Bono 5 sesiones: 210€</p>
-<p>Bono 10 sesiones: 400€</p>
-</div>
-<a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-<div class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
-<div class="flex justify-between items-start mb-8">
-<div>
-<h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Corredor del Henares</h3>
-<p class="text-on-surface-variant">Sesion a domicilio de 1 hora aprox.</p>
-</div>
-<div class="text-4xl sm:text-5xl font-headline text-primary">50€</div>
-</div>
-<div class="space-y-2 text-sm text-on-surface-variant mb-6">
-<p>Individual: 50€</p>
-<p>Bono 5 sesiones: 235€</p>
-<p>Bono 10 sesiones: 450€</p>
-</div>
-<a class="block w-full py-4 bg-primary text-white font-bold rounded-full editorial-shadow text-center" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-<div class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
-<div class="flex justify-between items-start mb-8">
-<div>
-<h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">A.D. Naya y Club Sinabro</h3>
-<p class="text-on-surface-variant">Colaboraciones y precio especial para miembros.</p>
-</div>
-<div class="text-4xl sm:text-5xl font-headline text-primary">35€</div>
-</div>
-<div class="space-y-2 text-sm text-on-surface-variant mb-6">
-<p>Individual: 35€</p>
-<p>Precio especial para miembros.</p>
-</div>
-<a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-<div class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
-<div class="flex justify-between items-start mb-8">
-<div>
-<h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Kairos EMCE</h3>
-<p class="text-on-surface-variant">Centro sanitario en Alcala de Henares.</p>
-</div>
-<div class="text-4xl sm:text-5xl font-headline text-primary">45€</div>
-</div>
-<div class="space-y-2 text-sm text-on-surface-variant mb-6">
-<p>Individual: 45€</p>
-<p>Bono 5 sesiones: 210€</p>
-<p>Bono 10 sesiones: 400€</p>
-<p class="pt-2">Escritorios 3 · Esc. Izqda 1 Izqda</p>
-</div>
-<a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-<div class="mt-8 flex flex-col md:flex-row md:flex-wrap gap-x-8 gap-y-3 text-sm text-on-surface-variant">
-<p>• El bono se abona en su totalidad.</p>
-<p>• Validez de 1 año desde la compra.</p>
-<p>• Sesion aproximada de 1 hora.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface overflow-hidden">
-<div class="max-w-7xl mx-auto reveal">
-<div class="flex flex-col lg:flex-row gap-10 lg:gap-12 items-start lg:items-center">
-<div class="w-full lg:w-1/3 text-center lg:text-left max-w-3xl lg:max-w-none mx-auto lg:mx-0">
-<span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Reseñas</span>
-<h2 class="font-headline text-4xl sm:text-5xl text-emerald-900 leading-tight mt-5">La voz de nuestros pacientes</h2>
-<p class="mt-6 font-body text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">Estas son algunas reseñas reales de pacientes.</p>
-</div>
-<div class="w-full lg:w-2/3 flex gap-4 sm:gap-6 overflow-x-auto pb-4 sm:pb-10 snap-x no-scrollbar mobile-scroll-row">
-<div class="min-w-[86%] sm:min-w-[420px] md:min-w-[450px] bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl snap-center italic">
-<div class="mb-6 flex gap-1">
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-lg sm:text-xl font-headline text-emerald-900 mb-8 leading-relaxed">"Marcos es un profesional de 10, me ayudo a superar una lesion deportiva que me limitaba muchisimo y ahora me trata la sobrecarga muscular de forma periodica."</p>
-<div class="flex items-center gap-4 not-italic">
-<div class="w-12 h-12 bg-emerald-200 rounded-full flex items-center justify-center font-bold text-emerald-800">JR</div>
-<div>
-<div class="font-bold">Chris</div>
-<div class="text-xs text-on-surface-variant uppercase tracking-widest">Resena verificada</div>
-</div>
-</div>
-</div>
-<div class="min-w-[86%] sm:min-w-[420px] md:min-w-[450px] bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl snap-center italic">
-<div class="mb-6 flex gap-1">
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-<p class="text-lg sm:text-xl font-headline text-emerald-900 mb-8 leading-relaxed">"Fenomenal, me trato durante varias sesiones y genial desde la primera. Recomendable 100%."</p>
-<div class="flex items-center gap-4 not-italic">
-<div class="w-12 h-12 bg-emerald-300 rounded-full flex items-center justify-center font-bold text-emerald-900">MG</div>
-<div>
-<div class="font-bold">Juani Donoso Cubillo</div>
-<div class="text-xs text-on-surface-variant uppercase tracking-widest">Resena verificada</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Form -->
-<section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-low" id="contacto">
-<div class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow grid grid-cols-1 md:grid-cols-2 reveal">
-<div class="p-8 sm:p-10 lg:p-12 bg-primary text-white space-y-8 flex flex-col justify-between">
-<div>
-<h2 class="font-headline text-3xl sm:text-4xl mb-4">¿Hablamos?</h2>
-<p class="text-emerald-50/70">Cuentame tu caso en este formulario y me pondre en contacto contigo para orientarte personalmente.</p>
-</div>
-<div class="space-y-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined" data-icon="mail">mail</span>
-<span>Formulario de contacto</span>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined" data-icon="call">call</span>
-<span>+34 681 85 20 33</span>
-</div>
-<a class="flex items-center gap-4 transition-colors hover-text-bright" href="https://wa.me/34681852033" target="_blank" rel="noopener noreferrer">
-<svg aria-hidden="true" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-<path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.58 0 .24 5.34.24 11.88c0 2.1.54 4.14 1.62 5.94L0 24l6.42-1.68a11.78 11.78 0 0 0 5.7 1.44h.06c6.54 0 11.88-5.34 11.88-11.88 0-3.18-1.26-6.18-3.54-8.4ZM12.18 21.72h-.06a9.8 9.8 0 0 1-4.98-1.38l-.36-.18-3.78.96 1.02-3.66-.24-.36a9.8 9.8 0 0 1-1.5-5.22c0-5.4 4.44-9.84 9.9-9.84 2.64 0 5.1 1.02 6.96 2.88a9.72 9.72 0 0 1 2.88 6.96c-.06 5.4-4.5 9.84-9.84 9.84Zm5.4-7.38c-.3-.18-1.8-.9-2.1-1.02-.24-.12-.48-.18-.66.18-.18.3-.78 1.02-.96 1.2-.18.18-.36.24-.66.06-.3-.18-1.32-.48-2.46-1.56-.9-.78-1.5-1.74-1.68-2.04-.18-.3 0-.42.12-.6.18-.18.3-.36.48-.54.12-.18.18-.3.3-.48.06-.18 0-.36-.06-.54-.06-.18-.66-1.62-.9-2.22-.24-.54-.48-.48-.66-.48h-.54c-.18 0-.48.06-.72.3-.24.24-.96.9-.96 2.22 0 1.32.96 2.58 1.08 2.76.18.18 1.92 2.94 4.62 4.14.66.3 1.2.48 1.62.66.66.18 1.2.18 1.68.12.54-.06 1.8-.72 2.04-1.44.3-.72.3-1.32.24-1.44-.06-.12-.24-.18-.54-.36Z"></path>
-</svg>
-<span>WhatsApp disponible</span>
-</a>
-<a class="flex items-center gap-4 transition-colors hover-text-bright" href="https://www.instagram.com/blazquezm_fisio" target="_blank" rel="noopener noreferrer">
-<svg aria-hidden="true" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5A3.95 3.95 0 0 0 16.25 3.8h-8.5Zm8.93 1.35a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.14 5.14 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z"></path>
-</svg>
-<span>@blazquezm_fisio</span>
-</a>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
-<span>Torrejon y Corredor del Henares</span>
-</div>
-</div>
-<div class="pt-8 border-t border-white/10">
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-all hover-icon" href="https://wa.me/34681852033" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-<svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-<path d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.58 0 .24 5.34.24 11.88c0 2.1.54 4.14 1.62 5.94L0 24l6.42-1.68a11.78 11.78 0 0 0 5.7 1.44h.06c6.54 0 11.88-5.34 11.88-11.88 0-3.18-1.26-6.18-3.54-8.4ZM12.18 21.72h-.06a9.8 9.8 0 0 1-4.98-1.38l-.36-.18-3.78.96 1.02-3.66-.24-.36a9.8 9.8 0 0 1-1.5-5.22c0-5.4 4.44-9.84 9.9-9.84 2.64 0 5.1 1.02 6.96 2.88a9.72 9.72 0 0 1 2.88 6.96c-.06 5.4-4.5 9.84-9.84 9.84Zm5.4-7.38c-.3-.18-1.8-.9-2.1-1.02-.24-.12-.48-.18-.66.18-.18.3-.78 1.02-.96 1.2-.18.18-.36.24-.66.06-.3-.18-1.32-.48-2.46-1.56-.9-.78-1.5-1.74-1.68-2.04-.18-.3 0-.42.12-.6.18-.18.3-.36.48-.54.12-.18.18-.3.3-.48.06-.18 0-.36-.06-.54-.06-.18-.66-1.62-.9-2.22-.24-.54-.48-.48-.66-.48h-.54c-.18 0-.48.06-.72.3-.24.24-.96.9-.96 2.22 0 1.32.96 2.58 1.08 2.76.18.18 1.92 2.94 4.62 4.14.66.3 1.2.48 1.62.66.66.18 1.2.18 1.68.12.54-.06 1.8-.72 2.04-1.44.3-.72.3-1.32.24-1.44-.06-.12-.24-.18-.54-.36Z"></path>
-</svg>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-all hover-icon" href="https://www.instagram.com/blazquezm_fisio" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Marcos Blazquez">
-<svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-<path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5A3.95 3.95 0 0 0 16.25 3.8h-8.5Zm8.93 1.35a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.14 5.14 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z"></path>
-</svg>
-</a>
-</div>
-</div>
-</div>
-<div class="p-8 sm:p-10 lg:p-12">
-<form class="space-y-6">
-<div>
-<label class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Nombre</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="Tu nombre completo" type="text"/>
-</div>
-<div>
-<label class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Email</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all" placeholder="hola@ejemplo.com" type="email"/>
-</div>
-<div>
-<label class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Mensaje</label>
-<textarea class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all resize-none" placeholder="Cuentame brevemente que necesitas..." rows="4"></textarea>
-</div>
-<button class="w-full py-4 bg-primary text-white font-bold rounded-full editorial-shadow transition-all duration-300 hover-lift" type="submit">Enviar solicitud</button>
-</form>
-</div>
-</div>
-</section>
-<div class="modal-overlay" hidden id="modal-terapia-manual">
-<div aria-describedby="modal-terapia-manual-description" aria-labelledby="modal-terapia-manual-title" aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
-<button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined" type="button">close</button>
-<div class="bg-surface-container overflow-hidden"><img alt="Terapia manual" class="w-full h-full object-cover min-h-[260px]" src="assets/images/terapiamanual.webp"/></div>
-<div class="p-8 md:p-10">
-<p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
-<h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-terapia-manual-title">Terapia Manual</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4" id="modal-terapia-manual-description">Es una tecnica de la fisioterapia en la que el profesional utiliza las manos para tratar distintas alteraciones del sistema musculoesqueletico.</p>
-<p class="text-on-surface-variant leading-relaxed mb-8">Entre ellas destacan los masajes terapeuticos, las movilizaciones articulares y las manipulaciones articulares para reducir dolor y recuperar movilidad.</p>
-<a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-</div>
-<div class="modal-overlay" hidden id="modal-fisioterapia-deportiva">
-<div aria-describedby="modal-fisioterapia-deportiva-description" aria-labelledby="modal-fisioterapia-deportiva-title" aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
-<button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined" type="button">close</button>
-<div class="bg-emerald-900/90 overflow-hidden"><img alt="Fisioterapia deportiva" class="w-full h-full object-cover min-h-[260px]" src="assets/images/vendajefuncional.webp"/></div>
-<div class="p-8 md:p-10">
-<p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
-<h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-fisioterapia-deportiva-title">Fisioterapia Deportiva</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4" id="modal-fisioterapia-deportiva-description">Especialidad orientada a recuperar lesiones derivadas del deporte y a prevenir recaidas cuando vuelves a entrenar.</p>
-<p class="text-on-surface-variant leading-relaxed mb-8">Incluye trabajo especifico de readaptacion, control de cargas y herramientas como vendaje funcional o kinesiotape segun el caso.</p>
-<a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-</div>
-<div class="modal-overlay" hidden id="modal-puncion-seca">
-<div aria-describedby="modal-puncion-seca-description" aria-labelledby="modal-puncion-seca-title" aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
-<button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined" type="button">close</button>
-<div class="bg-surface-container overflow-hidden"><img alt="Puncion seca" class="w-full h-full object-cover min-h-[260px]" src="assets/images/puncionseca.webp"/></div>
-<div class="p-8 md:p-10">
-<p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
-<h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-puncion-seca-title">Puncion Seca</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4" id="modal-puncion-seca-description">Tecnica que consiste en introducir agujas muy finas en puntos de tension o contractura para modular el dolor y mejorar la respuesta del tejido.</p>
-<p class="text-on-surface-variant leading-relaxed mb-8">Se utiliza para disminuir tension muscular, aliviar dolor y acelerar la recuperacion cuando el cuadro lo requiere.</p>
-<a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-</div>
-<div class="modal-overlay" hidden id="modal-electropuncion">
-<div aria-describedby="modal-electropuncion-description" aria-labelledby="modal-electropuncion-title" aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
-<button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined" type="button">close</button>
-<div class="bg-surface-container overflow-hidden"><img alt="Electropuncion y neuromodulacion" class="w-full h-full object-cover min-h-[260px]" src="assets/images/electropuncion.webp"/></div>
-<div class="p-8 md:p-10">
-<p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
-<h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-electropuncion-title">Electropuncion y Neuromodulacion</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4" id="modal-electropuncion-description">La electropuncion combina agujas de acupuntura con impulsos electricos para mejorar la respuesta del tejido y del sistema neuromuscular.</p>
-<p class="text-on-surface-variant leading-relaxed mb-8">La neuromodulacion busca modificar la manera en que los nervios transmiten la informacion para reducir dolor cronico y mejorar funcion.</p>
-<a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-</div>
-<div class="modal-overlay" hidden id="modal-ejercicio-terapeutico">
-<div aria-describedby="modal-ejercicio-terapeutico-description" aria-labelledby="modal-ejercicio-terapeutico-title" aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
-<button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined" type="button">close</button>
-<div class="bg-surface-container overflow-hidden"><img alt="Ejercicio terapeutico" class="w-full h-full object-cover min-h-[260px]" src="assets/images/ejercicio_terapeutico.webp"/></div>
-<div class="p-8 md:p-10">
-<p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
-<h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-ejercicio-terapeutico-title">Ejercicio Terapeutico</h2>
-<p class="text-on-surface-variant leading-relaxed mb-4" id="modal-ejercicio-terapeutico-description">Parte esencial del tratamiento cuando buscamos una recuperacion mas estable y funcional tras una lesion o en casos de dolor persistente.</p>
-<p class="text-on-surface-variant leading-relaxed mb-8">Consiste en ejercicios planificados y adaptados para reducir dolor, mejorar capacidad funcional y devolver seguridad al movimiento.</p>
-<a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold" href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez" target="_blank" rel="noopener noreferrer">Reservar ahora</a>
-</div>
-</div>
-</div>
-<!-- Footer -->
-<footer class="w-full border-t border-emerald-900/5 bg-emerald-50 dark:bg-emerald-950">
-<div class="flex flex-col lg:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-12 max-w-7xl mx-auto space-y-4 lg:space-y-0 text-center lg:text-left">
-<div class="font-serif italic text-lg sm:text-xl text-emerald-900 dark:text-emerald-50">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <!-- Service 1 -->
+                <button
+                    class="md:col-span-8 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 group relative overflow-hidden text-left open-modal hover-surface hover-arrow"
+                    data-modal="modal-terapia-manual" type="button">
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row h-full gap-8 lg:gap-10 items-center min-h-[280px] sm:min-h-[320px]">
+                        <div class="w-full md:w-[38%] shrink-0">
+                            <div
+                                class="w-full aspect-[4/3] sm:aspect-square rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 overflow-hidden">
+                                <img alt="Terapia manual"
+                                    class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]"
+                                    src="assets/images/terapiamanual.webp" />
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-headline text-[2.1rem] sm:text-4xl text-emerald-900 mb-4 leading-[1.02]">
+                                Terapia Manual Avanzada</h3>
+                            <p class="text-on-surface-variant max-w-md leading-relaxed">Masoterapia, movilizacion y
+                                manipulacion articular orientadas a disminuir dolor y recuperar movilidad.</p>
+                            <div class="flex items-center gap-4 text-primary font-bold">
+                                <span>Más información</span>
+                                <span
+                                    class="material-symbols-outlined transition-transform hover-arrow-icon">trending_flat</span>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <!-- Service 2 -->
+                <button
+                    class="md:col-span-4 bg-primary text-white p-6 sm:p-8 lg:p-10 rounded-xl transition-transform duration-500 text-left open-modal hover-lift"
+                    data-modal="modal-fisioterapia-deportiva" type="button">
+                    <div
+                        class="w-full aspect-[4/3] rounded-[2rem] bg-white/10 flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
+                        <img alt="Fisioterapia deportiva"
+                            class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]"
+                            src="assets/images/vendajefuncional.webp" />
+                    </div>
+                    <h3 class="font-headline text-3xl sm:text-4xl mb-4">Fisioterapia Deportiva</h3>
+                    <p class="text-emerald-50/80 leading-relaxed mb-8">Prevencion de recaidas, readaptacion al esfuerzo
+                        y mejora del rendimiento deportivo.</p>
+                    <ul class="space-y-3 font-label text-sm font-medium">
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm">check_circle</span> Prevención de lesiones
+                        </li>
+                        <li class="flex items-center gap-2"><span
+                                class="material-symbols-outlined text-sm">check_circle</span> Readaptación al esfuerzo
+                        </li>
+                    </ul>
+                    <div class="flex items-center gap-4 text-white font-bold mt-8">
+                        <span>Más información</span>
+                        <span class="material-symbols-outlined">trending_flat</span>
+                    </div>
+                </button>
+                <!-- Service 3 -->
+                <button
+                    class="md:col-span-4 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 text-left open-modal hover-surface"
+                    data-modal="modal-puncion-seca" type="button">
+                    <div
+                        class="w-full aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
+                        <img alt="Puncion seca" class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]"
+                            src="assets/images/puncionseca.webp" />
+                    </div>
+                    <h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Punción Seca</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Tecnica dirigida a disminuir tension muscular,
+                        aliviar dolor y acelerar la recuperacion del tejido.</p>
+                    <div class="flex items-center gap-4 text-primary font-bold mt-8">
+                        <span>Más información</span>
+                        <span class="material-symbols-outlined">trending_flat</span>
+                    </div>
+                </button>
+                <!-- Service 4 -->
+                <button
+                    class="md:col-span-4 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 text-left open-modal hover-surface"
+                    data-modal="modal-electropuncion" type="button">
+                    <div
+                        class="w-full aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
+                        <img alt="Electropuncion y neuromodulacion"
+                            class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]"
+                            src="assets/images/electropuncion.webp" />
+                    </div>
+                    <h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Electropunción y
+                        Neuromodulación</h3>
+                    <p class="text-on-surface-variant leading-relaxed">Impulsos electricos aplicados con precision para
+                        modular dolor y mejorar funcion neuromuscular.</p>
+                    <div class="flex items-center gap-4 text-primary font-bold mt-8">
+                        <span>Más información</span>
+                        <span class="material-symbols-outlined">trending_flat</span>
+                    </div>
+                </button>
+                <!-- Service 5 -->
+                <button
+                    class="md:col-span-8 bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl transition-all duration-500 flex flex-col md:flex-row gap-8 items-center text-left open-modal hover-surface"
+                    data-modal="modal-ejercicio-terapeutico" type="button">
+                    <div class="flex-1">
+                        <div
+                            class="w-full md:hidden aspect-[4/3] rounded-[2rem] bg-surface-container flex items-center justify-center p-4 sm:p-6 mb-6 sm:mb-8 overflow-hidden">
+                            <img alt="Ejercicio terapeutico"
+                                class="w-full h-full object-cover sm:object-contain rounded-[1.25rem]"
+                                src="assets/images/ejercicio_terapeutico.webp" />
+                        </div>
+                        <h3 class="font-headline text-3xl sm:text-4xl text-emerald-900 mb-4">Ejercicio Terapéutico</h3>
+                        <p class="text-on-surface-variant leading-relaxed">Trabajo progresivo y adaptado para recuperar
+                            capacidad funcional, regular el dolor y consolidar cambios entre sesiones.</p>
+                        <div class="flex items-center gap-4 text-primary font-bold mt-6">
+                            <span>Más información</span>
+                            <span class="material-symbols-outlined">trending_flat</span>
+                        </div>
+                    </div>
+                    <div
+                        class="hidden md:flex w-full md:w-[38%] aspect-[4/3] md:aspect-square bg-surface-container rounded-[2rem] overflow-hidden items-center justify-center p-4 sm:p-6">
+                        <img alt="Ejercicio terapeutico"
+                            class="w-full h-full object-cover md:object-contain rounded-[1.25rem]"
+                            src="assets/images/ejercicio_terapeutico.webp" />
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-emerald-900 text-white overflow-hidden relative"
+        id="experience">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-12 lg:gap-20 items-center reveal">
+            <div class="relative order-1 md:order-2 max-w-xl md:max-w-[32rem] mx-auto md:ml-auto md:mr-0 w-full">
+                <div
+                    class="hidden md:block bg-emerald-800 p-4 rounded-full border border-emerald-700/50 animate-pulse absolute -top-10 -right-10 w-40 h-40 opacity-20">
+                </div>
+                <div
+                    class="bg-surface-container-lowest p-2 rounded-[1.75rem] md:rounded-2xl md:transform md:-rotate-2 editorial-shadow">
+                    <img alt="Marcos Blazquez en entorno profesional"
+                        class="rounded-[1.35rem] md:rounded-xl w-full h-auto grayscale brightness-75 object-cover"
+                        src="assets/images/hospital.webp" />
+                </div>
+            </div>
+            <div class="space-y-7 sm:space-y-8 relative z-10 order-2 md:order-1 text-center md:text-left">
+                <div class="space-y-4 sm:space-y-5">
+                    <span
+                        class="font-label text-xs font-bold tracking-[0.24em] text-emerald-200/80 uppercase">Experiencia</span>
+                    <h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl leading-tight italic">Sobre Marcos
+                        Blázquez</h2>
+                </div>
+                <div class="space-y-5 sm:space-y-6 font-body text-emerald-100/80 text-base sm:text-lg leading-relaxed">
+                    <p>He desarrollado mi carrera entre consulta, domicilio y deporte, colaborando con clubes y entornos
+                        reales de rendimiento como <span class="text-white font-bold">Triana Club de Futbol</span> y
+                        <span class="text-white font-bold">A.D. Naya</span>.</p>
+                    <p>Mi filosofia une terapia manual precisa, ejercicio terapeutico y educacion del paciente,
+                        entendiendo que el exito del tratamiento depende de comprender cada caso de forma global.</p>
+                </div>
+                <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 pt-3 sm:pt-5 text-sm">
+                    <div
+                        class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
+                        <div
+                            class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
+                            <img alt="Escudo Triana Club de Futbol" class="w-full h-full object-contain"
+                                src="assets/images/triana.webp" />
+                        </div>
+                        <div class="text-3xl font-headline text-primary-fixed mb-1">2021-2022</div>
+                        <div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Triana C.F.</div>
+                    </div>
+                    <div
+                        class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
+                        <div
+                            class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
+                            <img alt="Escudo A.D. Naya" class="w-full h-full object-contain"
+                                src="assets/images/naya.webp" />
+                        </div>
+                        <div class="text-3xl font-headline text-primary-fixed mb-1">2023+</div>
+                        <div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">A.D. Naya</div>
+                    </div>
+                    <div
+                        class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
+                        <div
+                            class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
+                            <img alt="Logo Encadenate" class="w-full h-full object-contain"
+                                src="assets/images/encadenate.webp" />
+                        </div>
+                        <div class="text-3xl font-headline text-primary-fixed mb-1">Torrejon</div>
+                        <div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Encadenate</div>
+                    </div>
+                    <div
+                        class="rounded-[1.5rem] bg-white/6 border border-white/8 p-4 sm:p-5 md:bg-transparent md:border-0 md:p-0">
+                        <div
+                            class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/10 mb-4 mx-auto md:mx-0 flex items-center justify-center p-3">
+                            <img alt="Logo Fisioterapia Marcos Blazquez" class="w-full h-full object-contain"
+                                src="assets/images/logo.webp" />
+                        </div>
+                        <div class="text-3xl font-headline text-primary-fixed mb-1">+3 anos</div>
+                        <div class="text-xs tracking-widest uppercase font-label text-emerald-200/60">Servicio propio
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pathologies Section -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="text-center mb-14 sm:mb-20 max-w-3xl mx-auto space-y-5 sm:space-y-6">
+                <span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Patologias</span>
+                <h2 class="font-headline text-4xl sm:text-5xl text-emerald-900">¿Qué podemos tratar?</h2>
+                <p class="font-body text-on-surface-variant max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+                    Trabajo patologias frecuentes para ayudarte a recuperar movilidad, autonomia y confianza en tu dia a
+                    dia.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Dolor de espalda" class="w-28 h-28 object-contain"
+                            src="assets/images/dolor_de_espalda.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Dolor de espalda</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Disfunciones ATM" class="w-28 h-28 object-contain"
+                            src="assets/images/patologia_atm.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">ATM</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Dolor de hombro" class="w-28 h-28 object-contain"
+                            src="assets/images/dolordehombro.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Dolor de hombro</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Lesiones deportivas" class="w-28 h-28 object-contain"
+                            src="assets/images/lesiondeportiva.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Lesiones deportivas</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Patologias geriatricas" class="w-28 h-28 object-contain"
+                            src="assets/images/pacientegeriatrico.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Geriatria</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Puncion seca y sobrecarga" class="w-28 h-28 object-contain"
+                            src="assets/images/puncionseca.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Sobrecargas</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <img alt="Ejercicio terapeutico" class="w-28 h-28 object-contain"
+                            src="assets/images/ejercicio_terapeutico.webp" />
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Readaptacion</span>
+                </div>
+                <div
+                    class="p-8 sm:p-10 bg-surface-container-low rounded-[2rem] flex flex-col items-center text-center space-y-6 transition-colors editorial-shadow min-h-[280px] sm:min-h-[320px] justify-center hover-surface">
+                    <div
+                        class="w-32 h-32 sm:w-40 sm:h-40 rounded-[2rem] bg-surface-container flex items-center justify-center">
+                        <span class="material-symbols-outlined text-primary text-6xl"
+                            data-icon="more_horiz">more_horiz</span>
+                    </div>
+                    <span class="font-headline text-2xl sm:text-3xl">Y mas casos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Section -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-high" id="pricing">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+                <div class="space-y-8 text-center lg:text-left max-w-3xl lg:max-w-none mx-auto lg:mx-0">
+                    <div class="space-y-5 sm:space-y-6">
+                        <span
+                            class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Tarifas</span>
+                        <h2 class="font-headline text-4xl sm:text-5xl lg:text-6xl text-emerald-900">Inversión en tu
+                            salud</h2>
+                        <p
+                            class="text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Transparencia absoluta. Sesiones de aproximadamente una hora y opciones de bono segun zona y
+                            seguimiento.</p>
+                    </div>
+                    <div class="p-6 bg-surface-container-lowest rounded-xl editorial-shadow inline-block text-left">
+                        <div class="flex items-center gap-4 text-primary">
+                            <span class="material-symbols-outlined" data-icon="info">info</span>
+                            <span class="text-sm font-bold">Todos los materiales incluidos en el precio.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+                    <div
+                        class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Torrejon de Ardoz</h3>
+                                <p class="text-on-surface-variant">Sesion a domicilio de 1 hora aprox.</p>
+                            </div>
+                            <div class="text-4xl sm:text-5xl font-headline text-primary">45€</div>
+                        </div>
+                        <div class="space-y-2 text-sm text-on-surface-variant mb-6">
+                            <p>Individual: 45€</p>
+                            <p>Bono 5 sesiones: 210€</p>
+                            <p>Bono 10 sesiones: 400€</p>
+                        </div>
+                        <a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline"
+                            href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                            target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Corredor del Henares
+                                </h3>
+                                <p class="text-on-surface-variant">Sesion a domicilio de 1 hora aprox.</p>
+                            </div>
+                            <div class="text-4xl sm:text-5xl font-headline text-primary">50€</div>
+                        </div>
+                        <div class="space-y-2 text-sm text-on-surface-variant mb-6">
+                            <p>Individual: 50€</p>
+                            <p>Bono 5 sesiones: 235€</p>
+                            <p>Bono 10 sesiones: 450€</p>
+                        </div>
+                        <a class="block w-full py-4 bg-primary text-white font-bold rounded-full editorial-shadow text-center"
+                            href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                            target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">A.D. Naya y Club Sinabro
+                                </h3>
+                                <p class="text-on-surface-variant">Colaboraciones y precio especial para miembros.</p>
+                            </div>
+                            <div class="text-4xl sm:text-5xl font-headline text-primary">35€</div>
+                        </div>
+                        <div class="space-y-2 text-sm text-on-surface-variant mb-6">
+                            <p>Individual: 35€</p>
+                            <p>Precio especial para miembros.</p>
+                        </div>
+                        <a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline"
+                            href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                            target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+                    </div>
+                    <div
+                        class="bg-surface-container-lowest p-6 sm:p-8 lg:p-10 rounded-xl editorial-shadow group transition-all duration-300 hover-scale">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="font-headline text-2xl sm:text-3xl text-emerald-900">Kairos EMCE</h3>
+                                <p class="text-on-surface-variant">Centro sanitario en Alcala de Henares.</p>
+                            </div>
+                            <div class="text-4xl sm:text-5xl font-headline text-primary">45€</div>
+                        </div>
+                        <div class="space-y-2 text-sm text-on-surface-variant mb-6">
+                            <p>Individual: 45€</p>
+                            <p>Bono 5 sesiones: 210€</p>
+                            <p>Bono 10 sesiones: 400€</p>
+                            <p class="pt-2">Escritorios 3 · Esc. Izqda 1 Izqda</p>
+                        </div>
+                        <a class="block w-full py-4 border-2 border-primary text-primary font-bold rounded-full transition-all text-center hover-outline"
+                            href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                            target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+                    </div>
+                </div>
+                <div
+                    class="mt-8 flex flex-col md:flex-row md:flex-wrap gap-x-8 gap-y-3 text-sm text-on-surface-variant">
+                    <p>• El bono se abona en su totalidad.</p>
+                    <p>• Validez de 1 año desde la compra.</p>
+                    <p>• Sesion aproximada de 1 hora.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto reveal">
+            <div class="flex flex-col lg:flex-row gap-10 lg:gap-12 items-start lg:items-center">
+                <div class="w-full lg:w-1/3 text-center lg:text-left max-w-3xl lg:max-w-none mx-auto lg:mx-0">
+                    <span class="font-label text-xs font-bold tracking-[0.24em] text-primary uppercase">Reseñas</span>
+                    <h2 class="font-headline text-4xl sm:text-5xl text-emerald-900 leading-tight mt-5">La voz de
+                        nuestros pacientes</h2>
+                    <p
+                        class="mt-6 font-body text-on-surface-variant text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Estas son algunas reseñas reales de pacientes.</p>
+                </div>
+                <div
+                    class="w-full lg:w-2/3 flex gap-4 sm:gap-6 overflow-x-auto pb-4 sm:pb-10 snap-x no-scrollbar mobile-scroll-row">
+                    <div
+                        class="min-w-[86%] sm:min-w-[420px] md:min-w-[450px] bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl snap-center italic">
+                        <div class="mb-6 flex gap-1">
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-lg sm:text-xl font-headline text-emerald-900 mb-8 leading-relaxed">"Marcos es un
+                            profesional de 10, me ayudo a superar una lesion deportiva que me limitaba muchisimo y ahora
+                            me trata la sobrecarga muscular de forma periodica."</p>
+                        <div class="flex items-center gap-4 not-italic">
+                            <div
+                                class="w-12 h-12 bg-emerald-200 rounded-full flex items-center justify-center font-bold text-emerald-800">
+                                JR</div>
+                            <div>
+                                <div class="font-bold">Chris</div>
+                                <div class="text-xs text-on-surface-variant uppercase tracking-widest">Resena verificada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="min-w-[86%] sm:min-w-[420px] md:min-w-[450px] bg-surface-container-low p-6 sm:p-8 lg:p-10 rounded-xl snap-center italic">
+                        <div class="mb-6 flex gap-1">
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-yellow-500"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-lg sm:text-xl font-headline text-emerald-900 mb-8 leading-relaxed">"Fenomenal, me
+                            trato durante varias sesiones y genial desde la primera. Recomendable 100%."</p>
+                        <div class="flex items-center gap-4 not-italic">
+                            <div
+                                class="w-12 h-12 bg-emerald-300 rounded-full flex items-center justify-center font-bold text-emerald-900">
+                                MG</div>
+                            <div>
+                                <div class="font-bold">Juani Donoso Cubillo</div>
+                                <div class="text-xs text-on-surface-variant uppercase tracking-widest">Resena verificada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Form -->
+    <section class="py-24 sm:py-28 lg:py-32 px-4 sm:px-6 lg:px-8 bg-surface-container-low" id="contacto">
+        <div
+            class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl overflow-hidden editorial-shadow grid grid-cols-1 md:grid-cols-2 reveal">
+            <div class="p-8 sm:p-10 lg:p-12 bg-primary text-white space-y-8 flex flex-col justify-between">
+                <div>
+                    <h2 class="font-headline text-3xl sm:text-4xl mb-4">¿Hablamos?</h2>
+                    <p class="text-emerald-50/70">Cuentame tu caso en este formulario y me pondre en contacto contigo
+                        para orientarte personalmente.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined" data-icon="mail">mail</span>
+                        <span>Formulario de contacto</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined" data-icon="call">call</span>
+                        <span>+34 681 85 20 33</span>
+                    </div>
+                    <a class="flex items-center gap-4 transition-colors hover-text-bright"
+                        href="https://wa.me/34681852033" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.58 0 .24 5.34.24 11.88c0 2.1.54 4.14 1.62 5.94L0 24l6.42-1.68a11.78 11.78 0 0 0 5.7 1.44h.06c6.54 0 11.88-5.34 11.88-11.88 0-3.18-1.26-6.18-3.54-8.4ZM12.18 21.72h-.06a9.8 9.8 0 0 1-4.98-1.38l-.36-.18-3.78.96 1.02-3.66-.24-.36a9.8 9.8 0 0 1-1.5-5.22c0-5.4 4.44-9.84 9.9-9.84 2.64 0 5.1 1.02 6.96 2.88a9.72 9.72 0 0 1 2.88 6.96c-.06 5.4-4.5 9.84-9.84 9.84Zm5.4-7.38c-.3-.18-1.8-.9-2.1-1.02-.24-.12-.48-.18-.66.18-.18.3-.78 1.02-.96 1.2-.18.18-.36.24-.66.06-.3-.18-1.32-.48-2.46-1.56-.9-.78-1.5-1.74-1.68-2.04-.18-.3 0-.42.12-.6.18-.18.3-.36.48-.54.12-.18.18-.3.3-.48.06-.18 0-.36-.06-.54-.06-.18-.66-1.62-.9-2.22-.24-.54-.48-.48-.66-.48h-.54c-.18 0-.48.06-.72.3-.24.24-.96.9-.96 2.22 0 1.32.96 2.58 1.08 2.76.18.18 1.92 2.94 4.62 4.14.66.3 1.2.48 1.62.66.66.18 1.2.18 1.68.12.54-.06 1.8-.72 2.04-1.44.3-.72.3-1.32.24-1.44-.06-.12-.24-.18-.54-.36Z">
+                            </path>
+                        </svg>
+                        <span>WhatsApp disponible</span>
+                    </a>
+                    <a class="flex items-center gap-4 transition-colors hover-text-bright"
+                        href="https://www.instagram.com/blazquezm_fisio" target="_blank" rel="noopener noreferrer">
+                        <svg aria-hidden="true" class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5A3.95 3.95 0 0 0 16.25 3.8h-8.5Zm8.93 1.35a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.14 5.14 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z">
+                            </path>
+                        </svg>
+                        <span>@blazquezm_fisio</span>
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+                        <span>Torrejon y Corredor del Henares</span>
+                    </div>
+                </div>
+                <div class="pt-8 border-t border-white/10">
+                    <div class="flex gap-4">
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-all hover-icon"
+                            href="https://wa.me/34681852033" target="_blank" rel="noopener noreferrer"
+                            aria-label="Contactar por WhatsApp">
+                            <svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M20.52 3.48A11.8 11.8 0 0 0 12.12 0C5.58 0 .24 5.34.24 11.88c0 2.1.54 4.14 1.62 5.94L0 24l6.42-1.68a11.78 11.78 0 0 0 5.7 1.44h.06c6.54 0 11.88-5.34 11.88-11.88 0-3.18-1.26-6.18-3.54-8.4ZM12.18 21.72h-.06a9.8 9.8 0 0 1-4.98-1.38l-.36-.18-3.78.96 1.02-3.66-.24-.36a9.8 9.8 0 0 1-1.5-5.22c0-5.4 4.44-9.84 9.9-9.84 2.64 0 5.1 1.02 6.96 2.88a9.72 9.72 0 0 1 2.88 6.96c-.06 5.4-4.5 9.84-9.84 9.84Zm5.4-7.38c-.3-.18-1.8-.9-2.1-1.02-.24-.12-.48-.18-.66.18-.18.3-.78 1.02-.96 1.2-.18.18-.36.24-.66.06-.3-.18-1.32-.48-2.46-1.56-.9-.78-1.5-1.74-1.68-2.04-.18-.3 0-.42.12-.6.18-.18.3-.36.48-.54.12-.18.18-.3.3-.48.06-.18 0-.36-.06-.54-.06-.18-.66-1.62-.9-2.22-.24-.54-.48-.48-.66-.48h-.54c-.18 0-.48.06-.72.3-.24.24-.96.9-.96 2.22 0 1.32.96 2.58 1.08 2.76.18.18 1.92 2.94 4.62 4.14.66.3 1.2.48 1.62.66.66.18 1.2.18 1.68.12.54-.06 1.8-.72 2.04-1.44.3-.72.3-1.32.24-1.44-.06-.12-.24-.18-.54-.36Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center transition-all hover-icon"
+                            href="https://www.instagram.com/blazquezm_fisio" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram de Marcos Blazquez">
+                            <svg aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5A3.95 3.95 0 0 0 7.75 20.2h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5A3.95 3.95 0 0 0 16.25 3.8h-8.5Zm8.93 1.35a1.17 1.17 0 1 1 0 2.34 1.17 1.17 0 0 1 0-2.34ZM12 6.86A5.14 5.14 0 1 1 6.86 12 5.14 5.14 0 0 1 12 6.86Zm0 1.8A3.34 3.34 0 1 0 15.34 12 3.34 3.34 0 0 0 12 8.66Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8 sm:p-10 lg:p-12">
+                <form class="space-y-6">
+                    <div>
+                        <label
+                            class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Nombre</label>
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all"
+                            placeholder="Tu nombre completo" type="text" />
+                    </div>
+                    <div>
+                        <label
+                            class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Email</label>
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all"
+                            placeholder="hola@ejemplo.com" type="email" />
+                    </div>
+                    <div>
+                        <label
+                            class="block font-label text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Mensaje</label>
+                        <textarea
+                            class="w-full bg-transparent border-0 border-b border-outline-variant/30 focus:ring-0 focus:border-primary px-0 py-2 transition-all resize-none"
+                            placeholder="Cuentame brevemente que necesitas..." rows="4"></textarea>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-primary text-white font-bold rounded-full editorial-shadow transition-all duration-300 hover-lift"
+                        type="submit">Enviar solicitud</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="modal-overlay" hidden id="modal-terapia-manual">
+        <div aria-describedby="modal-terapia-manual-description" aria-labelledby="modal-terapia-manual-title"
+            aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
+            <button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined"
+                type="button">close</button>
+            <div class="bg-surface-container overflow-hidden"><img alt="Terapia manual"
+                    class="w-full h-full object-cover min-h-[260px]" src="assets/images/terapiamanual.webp" /></div>
+            <div class="p-8 md:p-10">
+                <p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
+                <h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-terapia-manual-title">Terapia Manual
+                </h2>
+                <p class="text-on-surface-variant leading-relaxed mb-4" id="modal-terapia-manual-description">Es una
+                    tecnica de la fisioterapia en la que el profesional utiliza las manos para tratar distintas
+                    alteraciones del sistema musculoesqueletico.</p>
+                <p class="text-on-surface-variant leading-relaxed mb-8">Entre ellas destacan los masajes terapeuticos,
+                    las movilizaciones articulares y las manipulaciones articulares para reducir dolor y recuperar
+                    movilidad.</p>
+                <a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold"
+                    href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                    target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" hidden id="modal-fisioterapia-deportiva">
+        <div aria-describedby="modal-fisioterapia-deportiva-description"
+            aria-labelledby="modal-fisioterapia-deportiva-title" aria-modal="true"
+            class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
+            <button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined"
+                type="button">close</button>
+            <div class="bg-emerald-900/90 overflow-hidden"><img alt="Fisioterapia deportiva"
+                    class="w-full h-full object-cover min-h-[260px]" src="assets/images/vendajefuncional.webp" /></div>
+            <div class="p-8 md:p-10">
+                <p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
+                <h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-fisioterapia-deportiva-title">
+                    Fisioterapia Deportiva</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-4" id="modal-fisioterapia-deportiva-description">
+                    Especialidad orientada a recuperar lesiones derivadas del deporte y a prevenir recaidas cuando
+                    vuelves a entrenar.</p>
+                <p class="text-on-surface-variant leading-relaxed mb-8">Incluye trabajo especifico de readaptacion,
+                    control de cargas y herramientas como vendaje funcional o kinesiotape segun el caso.</p>
+                <a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold"
+                    href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                    target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" hidden id="modal-puncion-seca">
+        <div aria-describedby="modal-puncion-seca-description" aria-labelledby="modal-puncion-seca-title"
+            aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
+            <button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined"
+                type="button">close</button>
+            <div class="bg-surface-container overflow-hidden"><img alt="Puncion seca"
+                    class="w-full h-full object-cover min-h-[260px]" src="assets/images/puncionseca.webp" /></div>
+            <div class="p-8 md:p-10">
+                <p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
+                <h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-puncion-seca-title">Puncion Seca</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-4" id="modal-puncion-seca-description">Tecnica que
+                    consiste en introducir agujas muy finas en puntos de tension o contractura para modular el dolor y
+                    mejorar la respuesta del tejido.</p>
+                <p class="text-on-surface-variant leading-relaxed mb-8">Se utiliza para disminuir tension muscular,
+                    aliviar dolor y acelerar la recuperacion cuando el cuadro lo requiere.</p>
+                <a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold"
+                    href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                    target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" hidden id="modal-electropuncion">
+        <div aria-describedby="modal-electropuncion-description" aria-labelledby="modal-electropuncion-title"
+            aria-modal="true" class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
+            <button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined"
+                type="button">close</button>
+            <div class="bg-surface-container overflow-hidden"><img alt="Electropuncion y neuromodulacion"
+                    class="w-full h-full object-cover min-h-[260px]" src="assets/images/electropuncion.webp" /></div>
+            <div class="p-8 md:p-10">
+                <p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
+                <h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-electropuncion-title">Electropuncion
+                    y Neuromodulacion</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-4" id="modal-electropuncion-description">La
+                    electropuncion combina agujas de acupuntura con impulsos electricos para mejorar la respuesta del
+                    tejido y del sistema neuromuscular.</p>
+                <p class="text-on-surface-variant leading-relaxed mb-8">La neuromodulacion busca modificar la manera en
+                    que los nervios transmiten la informacion para reducir dolor cronico y mejorar funcion.</p>
+                <a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold"
+                    href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                    target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" hidden id="modal-ejercicio-terapeutico">
+        <div aria-describedby="modal-ejercicio-terapeutico-description"
+            aria-labelledby="modal-ejercicio-terapeutico-title" aria-modal="true"
+            class="modal-card grid grid-cols-1 md:grid-cols-2" role="dialog" tabindex="-1">
+            <button aria-label="Cerrar modal" class="modal-close close-modal material-symbols-outlined"
+                type="button">close</button>
+            <div class="bg-surface-container overflow-hidden"><img alt="Ejercicio terapeutico"
+                    class="w-full h-full object-cover min-h-[260px]" src="assets/images/ejercicio_terapeutico.webp" />
+            </div>
+            <div class="p-8 md:p-10">
+                <p class="font-label text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">Tratamiento</p>
+                <h2 class="font-headline text-5xl text-emerald-900 mb-4" id="modal-ejercicio-terapeutico-title">
+                    Ejercicio Terapeutico</h2>
+                <p class="text-on-surface-variant leading-relaxed mb-4" id="modal-ejercicio-terapeutico-description">
+                    Parte esencial del tratamiento cuando buscamos una recuperacion mas estable y funcional tras una
+                    lesion o en casos de dolor persistente.</p>
+                <p class="text-on-surface-variant leading-relaxed mb-8">Consiste en ejercicios planificados y adaptados
+                    para reducir dolor, mejorar capacidad funcional y devolver seguridad al movimiento.</p>
+                <a class="inline-flex min-h-12 items-center justify-center rounded-full bg-primary px-6 text-white font-bold"
+                    href="https://tufisio.com/fisioterapeuta/torrejon-de-ardoz/fisioterapia-a-domicilio-marcos-blazquez"
+                    target="_blank" rel="noopener noreferrer">Reservar ahora</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full border-t border-emerald-900/5 bg-emerald-50 dark:bg-emerald-950">
+        <div
+            class="flex flex-col lg:flex-row justify-between items-center px-4 sm:px-6 lg:px-8 py-10 sm:py-12 max-w-7xl mx-auto space-y-4 lg:space-y-0 text-center lg:text-left">
+            <div class="font-serif italic text-lg sm:text-xl text-emerald-900 dark:text-emerald-50">
                 Marcos Blazquez Fisioterapia
             </div>
-<div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-['Manrope'] text-sm tracking-wide">
-<a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link" href="#philosophy">Filosofia</a>
-<a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link" href="#services">Servicios</a>
-<a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link" href="#contacto">Contacto</a>
-</div>
-<div class="font-['Manrope'] text-sm tracking-wide text-emerald-900/60 dark:text-emerald-100/60">
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-['Manrope'] text-sm tracking-wide">
+                <a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link"
+                    href="#philosophy">Filosofia</a>
+                <a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link"
+                    href="#services">Servicios</a>
+                <a class="text-emerald-900/60 dark:text-emerald-100/60 transition-colors footer-link"
+                    href="#contacto">Contacto</a>
+            </div>
+            <div class="font-['Manrope'] text-sm tracking-wide text-emerald-900/60 dark:text-emerald-100/60">
                 © 2026 Marcos Blazquez Fisioterapia.
             </div>
-</div>
-</footer>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const sections = document.querySelectorAll(".reveal");
-        const modalTriggers = document.querySelectorAll(".open-modal");
-        const modalCloseButtons = document.querySelectorAll(".close-modal");
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
-        const mobileMenu = document.getElementById("mobile-menu");
-        const mobileMenuIcon = document.getElementById("mobile-menu-icon");
-        const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
-        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        let activeModal = null;
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".reveal");
+            const modalTriggers = document.querySelectorAll(".open-modal");
+            const modalCloseButtons = document.querySelectorAll(".close-modal");
+            const mobileMenuButton = document.getElementById("mobile-menu-button");
+            const mobileMenu = document.getElementById("mobile-menu");
+            const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+            const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
+            const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            let activeModal = null;
 
-        const closeMobileMenu = () => {
-            if (!mobileMenu || !mobileMenuButton || !mobileMenuIcon) return;
-            mobileMenu.hidden = true;
-            mobileMenu.classList.remove("is-open");
-            mobileMenuButton.setAttribute("aria-expanded", "false");
-            mobileMenuButton.setAttribute("aria-label", "Abrir menu");
-            mobileMenuIcon.textContent = "menu";
-        };
+            const closeMobileMenu = () => {
+                if (!mobileMenu || !mobileMenuButton || !mobileMenuIcon) return;
+                mobileMenu.hidden = true;
+                mobileMenu.classList.remove("is-open");
+                mobileMenuButton.setAttribute("aria-expanded", "false");
+                mobileMenuButton.setAttribute("aria-label", "Abrir menu");
+                mobileMenuIcon.textContent = "menu";
+            };
 
-        const openMobileMenu = () => {
-            if (!mobileMenu || !mobileMenuButton || !mobileMenuIcon) return;
-            mobileMenu.hidden = false;
-            requestAnimationFrame(() => mobileMenu.classList.add("is-open"));
-            mobileMenuButton.setAttribute("aria-expanded", "true");
-            mobileMenuButton.setAttribute("aria-label", "Cerrar menu");
-            mobileMenuIcon.textContent = "close";
-        };
+            const openMobileMenu = () => {
+                if (!mobileMenu || !mobileMenuButton || !mobileMenuIcon) return;
+                mobileMenu.hidden = false;
+                requestAnimationFrame(() => mobileMenu.classList.add("is-open"));
+                mobileMenuButton.setAttribute("aria-expanded", "true");
+                mobileMenuButton.setAttribute("aria-label", "Cerrar menu");
+                mobileMenuIcon.textContent = "close";
+            };
 
-        const closeModal = () => {
-            if (!activeModal) return;
-            activeModal.hidden = true;
-            document.body.style.overflow = "";
-            activeModal = null;
-        };
+            const closeModal = () => {
+                if (!activeModal) return;
+                activeModal.hidden = true;
+                document.body.style.overflow = "";
+                activeModal = null;
+            };
 
-        if (prefersReducedMotion) {
-            sections.forEach((section) => section.classList.add("is-visible"));
-        } else {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
+            if (prefersReducedMotion) {
+                sections.forEach((section) => section.classList.add("is-visible"));
+            } else {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("is-visible");
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+
+                sections.forEach((section) => observer.observe(section));
+            }
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener("click", () => {
+                    const isOpen = mobileMenuButton.getAttribute("aria-expanded") === "true";
+                    if (isOpen) {
+                        closeMobileMenu();
+                    } else {
+                        openMobileMenu();
                     }
                 });
-            }, { threshold: 0.15 });
 
-            sections.forEach((section) => observer.observe(section));
-        }
+                mobileMenuLinks.forEach((link) => {
+                    link.addEventListener("click", closeMobileMenu);
+                });
 
-        if (mobileMenuButton && mobileMenu) {
-            mobileMenuButton.addEventListener("click", () => {
-                const isOpen = mobileMenuButton.getAttribute("aria-expanded") === "true";
-                if (isOpen) {
+                window.addEventListener("resize", () => {
+                    if (window.innerWidth >= 768) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+
+            modalTriggers.forEach((trigger) => {
+                trigger.addEventListener("click", () => {
+                    const modalId = trigger.getAttribute("data-modal");
+                    const modal = modalId ? document.getElementById(modalId) : null;
+
+                    if (!modal) return;
+                    modal.hidden = false;
+                    document.body.style.overflow = "hidden";
+                    activeModal = modal;
+                    modal.querySelector("[role='dialog']")?.focus();
+                });
+            });
+
+            modalCloseButtons.forEach((button) => {
+                button.addEventListener("click", closeModal);
+            });
+
+            document.querySelectorAll(".modal-overlay").forEach((modal) => {
+                modal.addEventListener("click", (event) => {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+            });
+
+            document.addEventListener("keydown", (event) => {
+                if (event.key === "Escape") {
                     closeMobileMenu();
-                } else {
-                    openMobileMenu();
-                }
-            });
-
-            mobileMenuLinks.forEach((link) => {
-                link.addEventListener("click", closeMobileMenu);
-            });
-
-            window.addEventListener("resize", () => {
-                if (window.innerWidth >= 768) {
-                    closeMobileMenu();
-                }
-            });
-        }
-
-        modalTriggers.forEach((trigger) => {
-            trigger.addEventListener("click", () => {
-                const modalId = trigger.getAttribute("data-modal");
-                const modal = modalId ? document.getElementById(modalId) : null;
-
-                if (!modal) return;
-                modal.hidden = false;
-                document.body.style.overflow = "hidden";
-                activeModal = modal;
-                modal.querySelector("[role='dialog']")?.focus();
-            });
-        });
-
-        modalCloseButtons.forEach((button) => {
-            button.addEventListener("click", closeModal);
-        });
-
-        document.querySelectorAll(".modal-overlay").forEach((modal) => {
-            modal.addEventListener("click", (event) => {
-                if (event.target === modal) {
                     closeModal();
                 }
             });
         });
+    </script>
+</body>
 
-        document.addEventListener("keydown", (event) => {
-            if (event.key === "Escape") {
-                closeMobileMenu();
-                closeModal();
-            }
-        });
-    });
-</script>
-</body></html>
+</html>

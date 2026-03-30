@@ -147,7 +147,7 @@ Sigue este checklist para desplegar el sistema completo a producción.
 - [ ] Deben ser dirigidos a `api.netlify.com`
 
 ### Test Webhook Flow
-- [ ] Hacer un cambio pequeño en `index2.html`
+- [ ] Hacer un cambio pequeño en `index.html`
 - [ ] Push a `staging` rama
 - [ ] Esperar 1 min
 - [ ] Ir a Netlify staging site → Deploys

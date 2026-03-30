@@ -6,7 +6,10 @@
 class AdminAPI {
   constructor() {
     // En desarrollo, usa localhost; en producción, usa dominio
-    const isDev = window.location.hostname === 'localhost';
+    const isDev = window.location.hostname === 'localhost' || 
+                  window.location.hostname === '127.0.0.1' ||
+                  window.location.port === '5500' ||
+                  window.location.port === '3000';
     this.baseURL = isDev ? 'http://localhost:3001' : 'https://landing-marcos-agentes.vercel.app';
     this.token = localStorage.getItem('admin_token');
   }

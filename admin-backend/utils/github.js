@@ -9,7 +9,17 @@
  * - GITHUB_BRANCH: Rama donde guardar (ej: "staging", "main")
  */
 
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import { readFileSync, writeFileSync } from 'fs';
 import { Octokit } from 'octokit';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// Cargar variables de entorno desde el directorio padre (.env en admin-backend/)
+dotenv.config({ path: join(__dirname, '..', '.env') });
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN
@@ -27,13 +37,22 @@ if (!OWNER || !REPO || !process.env.GITHUB_TOKEN) {
     GITHUB_TOKEN: !!process.env.GITHUB_TOKEN,
     BRANCH
   });
+} else {
+  console.log('✅ GitHub configurado:', {
+    OWNER,
+    REPO,
+    BRANCH,
+    TOKEN: process.env.GITHUB_TOKEN.slice(0, 10) + '...'
+  });
 }
 
 /**
  * Obtiene el contenido actual de content.json desde GitHub
+ * En desarrollo, usa fallback a archivo local si GitHub falla
  */
 export async function getContent() {
   try {
+    console.log(`📡 Intentando obtener content.json de GitHub...`);
     const response = await octokit.rest.repos.getContent({
       owner: OWNER,
       repo: REPO,
@@ -42,16 +61,30 @@ export async function getContent() {
     });
 
     const content = Buffer.from(response.data.content, 'base64').toString();
+    console.log('✅ Content.json obtenido de GitHub exitosamente');
     return JSON.parse(content);
   } catch (error) {
-    console.error('Error obteniendo content.json:', error.message);
+    console.warn(`⚠️  Error conectando a GitHub (${error.status}):`, error.message);
+    
+    // Fallback: leer archivo local en desarrollo
+    if (process.env.NODE_ENV === 'development') {
+      try {
+        const localPath = join(__dirname, '..', '..', 'content.json');
+        const localContent = readFileSync(localPath, 'utf-8');
+        console.log('📁 Usando content.json local como fallback');
+        return JSON.parse(localContent);
+      } catch (localError) {
+        console.error('❌ Error leyendo content.json local:', localError.message);
+      }
+    }
+    
     return null;
   }
 }
 
 /**
  * Actualiza content.json en GitHub
- * Crea un commit en la rama especificada
+ * En desarrollo con error de GitHub, guarda localmente
  */
 export async function updateContent(contentObject, commitMessage) {
   try {
@@ -92,7 +125,7 @@ export async function updateContent(contentObject, commitMessage) {
 
     const response = await octokit.rest.repos.createOrUpdateFileContents(updatePayload);
 
-    console.log(`✅ Contenido actualizado: ${response.data.commit.sha.slice(0, 7)}`);
+    console.log(`✅ Contenido actualizado en GitHub: ${response.data.commit.sha.slice(0, 7)}`);
 
     return {
       commit: response.data.commit.sha,
@@ -100,7 +133,27 @@ export async function updateContent(contentObject, commitMessage) {
       timestamp: new Date().toISOString()
     };
   } catch (error) {
-    console.error('Error actualizando content.json:', error.message);
+    console.error('⚠️  Error actualizando en GitHub:', error.message);
+    
+    // Fallback: guardar localmente en desarrollo
+    if (process.env.NODE_ENV === 'development') {
+      try {
+        const localPath = join(__dirname, '..', '..', 'content.json');
+        const contentString = JSON.stringify(contentObject, null, 2);
+        writeFileSync(localPath, contentString, 'utf-8');
+        console.log('📁 Contenido guardado localmente (GitHub no disponible)');
+        
+        return {
+          commit: 'local-' + Date.now(),
+          timestamp: new Date().toISOString(),
+          mode: 'local'
+        };
+      } catch (localError) {
+        console.error('❌ Error guardando localmente:', localError.message);
+        throw new Error('No se pudo guardar en GitHub ni localmente: ' + localError.message);
+      }
+    }
+    
     throw error;
   }
 }

@@ -49,7 +49,7 @@ Se ha implementado un sistema completo de administración de contenidos para la 
 
 ### Landing Original (Sin cambios, pero:)
 ```
-index2.html                        # 100% compatible
+index.html                        # 100% compatible
 styles.css                         # Sin cambios
 script.js                          # Sin cambios (funciona igual)
 assets/images/*                    # Sin cambios

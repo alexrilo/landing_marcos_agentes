@@ -14,7 +14,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { dirname, join } from 'path';
 import authRouter from './routes/auth.js';
 import contentRouter from './routes/content.js';
 import imageRouter from './routes/images.js';
@@ -22,7 +22,7 @@ import imageRouter from './routes/images.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config();
+dotenv.config({ path: join(__dirname, '.env') });
 
 const app = express();
 const PORT = process.env.PORT || 3001;

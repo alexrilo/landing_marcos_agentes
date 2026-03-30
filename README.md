@@ -6,7 +6,7 @@ Sistema completo de landing page con panel de administración para gestionar con
 
 ```
 landing-marcos-agentes/
-├── index2.html              # Landing page (versión desplegada)
+├── index.html              # Landing page (versión desplegada)
 ├── styles.css               # Estilos landing
 ├── content.json             # DATOS CENTRALIZADOS (editable por admin)
 ├── script.js                # Lógica landing

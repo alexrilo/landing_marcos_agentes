@@ -60,7 +60,7 @@
 landing-marcos-agentes/
 │
 ├── 📄 content.json                  ← DATOS CENTRALIZADOS (editable)
-├── 📄 index2.html                   ← Landing page actual
+├── 📄 index.html                   ← Landing page actual
 ├── 📄 script.js                     ← Lógica landing
 ├── 📄 styles.css                    ← Estilos
 │
